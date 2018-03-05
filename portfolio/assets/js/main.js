@@ -7,23 +7,43 @@
 		medium: '(max-width: 980px)',
 		small: '(max-width: 736px)',
 		xsmall: '(max-width: 480px)',
-		xxsmall: '(max-width: 360px)'
+		'xlarge-to-max': '(min-width: 1681px)',
+		'small-to-xlarge': '(min-width: 481px) and (max-width: 1680px)'
 	});
 
 	$(function() {
 
 		var	$window = $(window),
-			$body = $('body'),
-			$wrapper = $('#wrapper');
+			$head = $('head'),
+			$body = $('body');
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+		// Disable animations/transitions ...
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+			// ... until the page has loaded.
+				$body.addClass('is-loading');
+
+				$window.on('load', function() {
+					setTimeout(function() {
+						$body.removeClass('is-loading');
+					}, 100);
+				});
+
+			// ... when resizing.
+				var resizeTimeout;
+
+				$window.on('resize', function() {
+
+					// Mark as resizing.
+						$body.addClass('is-resizing');
+
+					// Unmark after delay.
+						clearTimeout(resizeTimeout);
+
+						resizeTimeout = setTimeout(function() {
+							$body.removeClass('is-resizing');
+						}, 100);
+
+				});
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
@@ -36,316 +56,224 @@
 				);
 			});
 
-		// Browser fixes.
+		// Fixes.
 
-			// IE: Flexbox min-height bug.
-				if (skel.vars.browser == 'ie')
-					(function() {
-
-						var flexboxFixTimeoutId;
-
-						$window.on('resize.flexbox-fix', function() {
-
-							var $x = $('.fullscreen');
-
-							clearTimeout(flexboxFixTimeoutId);
-
-							flexboxFixTimeoutId = setTimeout(function() {
-
-								if ($x.prop('scrollHeight') > $window.height())
-									$x.css('height', 'auto');
-								else
-									$x.css('height', '100vh');
-
-							}, 250);
-
-						}).triggerHandler('resize.flexbox-fix');
-
-					})();
-
-			// Object fit workaround.
-				if (!skel.canUse('object-fit'))
-					(function() {
-
-						$('.banner .image, .spotlight .image').each(function() {
-
-							var $this = $(this),
-								$img = $this.children('img'),
-								positionClass = $this.parent().attr('class').match(/image-position-([a-z]+)/);
-
-							// Set image.
-								$this
-									.css('background-image', 'url("' + $img.attr('src') + '")')
-									.css('background-repeat', 'no-repeat')
-									.css('background-size', 'cover');
-
-							// Set position.
-								switch (positionClass.length > 1 ? positionClass[1] : '') {
-
-									case 'left':
-										$this.css('background-position', 'left');
-										break;
-
-									case 'right':
-										$this.css('background-position', 'right');
-										break;
-
-									default:
-									case 'center':
-										$this.css('background-position', 'center');
-										break;
-
-								}
-
-							// Hide original.
-								$img.css('opacity', '0');
-
-						});
-
-					})();
-
-		// Smooth scroll.
-			$('.smooth-scroll').scrolly();
-			$('.smooth-scroll-middle').scrolly({ anchor: 'middle' });
-
-		// Wrapper.
-			$wrapper.children()
-				.scrollex({
-					top:		'30vh',
-					bottom:		'30vh',
-					initialize:	function() {
-						$(this).addClass('is-inactive');
-					},
-					terminate:	function() {
-						$(this).removeClass('is-inactive');
-					},
-					enter:		function() {
-						$(this).removeClass('is-inactive');
-					},
-					leave:		function() {
-
-						var $this = $(this);
-
-						if ($this.hasClass('onscroll-bidirectional'))
-							$this.addClass('is-inactive');
-
-					}
-				});
-
-		// Items.
-			$('.items')
-				.scrollex({
-					top:		'30vh',
-					bottom:		'30vh',
-					delay:		50,
-					initialize:	function() {
-						$(this).addClass('is-inactive');
-					},
-					terminate:	function() {
-						$(this).removeClass('is-inactive');
-					},
-					enter:		function() {
-						$(this).removeClass('is-inactive');
-					},
-					leave:		function() {
-
-						var $this = $(this);
-
-						if ($this.hasClass('onscroll-bidirectional'))
-							$this.addClass('is-inactive');
-
-					}
-				})
-				.children()
-					.wrapInner('<div class="inner"></div>');
-
-		// Gallery.
-			$('.gallery')
-				.wrapInner('<div class="inner"></div>')
-				.prepend(skel.vars.mobile ? '' : '<div class="forward"></div><div class="backward"></div>')
-				.scrollex({
-					top:		'30vh',
-					bottom:		'30vh',
-					delay:		50,
-					initialize:	function() {
-						$(this).addClass('is-inactive');
-					},
-					terminate:	function() {
-						$(this).removeClass('is-inactive');
-					},
-					enter:		function() {
-						$(this).removeClass('is-inactive');
-					},
-					leave:		function() {
-
-						var $this = $(this);
-
-						if ($this.hasClass('onscroll-bidirectional'))
-							$this.addClass('is-inactive');
-
-					}
-				})
-				.children('.inner')
-					//.css('overflow', 'hidden')
-					.css('overflow-y', skel.vars.mobile ? 'visible' : 'hidden')
-					.css('overflow-x', skel.vars.mobile ? 'scroll' : 'hidden')
-					.scrollLeft(0);
-
-			// Style #1.
-				// ...
-
-			// Style #2.
-				$('.gallery')
-					.on('wheel', '.inner', function(event) {
-
-						var	$this = $(this),
-							delta = (event.originalEvent.deltaX * 10);
-
-						// Cap delta.
-							if (delta > 0)
-								delta = Math.min(25, delta);
-							else if (delta < 0)
-								delta = Math.max(-25, delta);
-
-						// Scroll.
-							$this.scrollLeft( $this.scrollLeft() + delta );
-
-					})
-					.on('mouseenter', '.forward, .backward', function(event) {
+			// Object fit images.
+				if (!skel.canUse('object-fit')
+				||	skel.vars.browser == 'safari')
+					$('.image.object').each(function() {
 
 						var $this = $(this),
-							$inner = $this.siblings('.inner'),
-							direction = ($this.hasClass('forward') ? 1 : -1);
+							$img = $this.children('img');
 
-						// Clear move interval.
-							clearInterval(this._gallery_moveIntervalId);
+						// Hide original image.
+							$img.css('opacity', '0');
 
-						// Start interval.
-							this._gallery_moveIntervalId = setInterval(function() {
-								$inner.scrollLeft( $inner.scrollLeft() + (5 * direction) );
-							}, 10);
-
-					})
-					.on('mouseleave', '.forward, .backward', function(event) {
-
-						// Clear move interval.
-							clearInterval(this._gallery_moveIntervalId);
+						// Set background.
+							$this
+								.css('background-image', 'url("' + $img.attr('src') + '")')
+								.css('background-size', $img.css('object-fit') ? $img.css('object-fit') : 'cover')
+								.css('background-position', $img.css('object-position') ? $img.css('object-position') : 'center');
 
 					});
 
-			// Lightbox.
-				$('.gallery.lightbox')
-					.on('click', 'a', function(event) {
+		// Sidebar.
+			var $sidebar = $('#sidebar'),
+				$sidebar_inner = $sidebar.children('.inner');
 
-						var $a = $(this),
-							$gallery = $a.parents('.gallery'),
-							$modal = $gallery.children('.modal'),
-							$modalImg = $modal.find('img'),
-							href = $a.attr('href');
+			// Inactive by default on <= large.
+				skel
+					.on('+large', function() {
+						$sidebar.addClass('inactive');
+					})
+					.on('-large !large', function() {
+						$sidebar.removeClass('inactive');
+					});
 
-						// Not an image? Bail.
-							if (!href.match(/\.(jpg|gif|png|mp4)$/))
+			// Hack: Workaround for Chrome/Android scrollbar position bug.
+				if (skel.vars.os == 'android'
+				&&	skel.vars.browser == 'chrome')
+					$('<style>#sidebar .inner::-webkit-scrollbar { display: none; }</style>')
+						.appendTo($head);
+
+			// Toggle.
+				if (skel.vars.IEVersion > 9) {
+
+					$('<a href="#sidebar" class="toggle">Toggle</a>')
+						.appendTo($sidebar)
+						.on('click', function(event) {
+
+							// Prevent default.
+								event.preventDefault();
+								event.stopPropagation();
+
+							// Toggle.
+								$sidebar.toggleClass('inactive');
+
+						});
+
+				}
+
+			// Events.
+
+				// Link clicks.
+					$sidebar.on('click', 'a', function(event) {
+
+						// >large? Bail.
+							if (!skel.breakpoint('large').active)
 								return;
+
+						// Vars.
+							var $a = $(this),
+								href = $a.attr('href'),
+								target = $a.attr('target');
 
 						// Prevent default.
 							event.preventDefault();
 							event.stopPropagation();
 
-						// Locked? Bail.
-							if ($modal[0]._locked)
+						// Check URL.
+							if (!href || href == '#' || href == '')
 								return;
 
-						// Lock.
-							$modal[0]._locked = true;
+						// Hide sidebar.
+							$sidebar.addClass('inactive');
 
-						// Set src.
-							$modalImg.attr('src', href);
-
-						// Set visible.
-							$modal.addClass('visible');
-
-						// Focus.
-							$modal.focus();
-
-						// Delay.
+						// Redirect to href.
 							setTimeout(function() {
 
-								// Unlock.
-									$modal[0]._locked = false;
+								if (target == '_blank')
+									window.open(href);
+								else
+									window.location.href = href;
 
-							}, 600);
+							}, 500);
 
-					})
-					.on('click', '.modal', function(event) {
+					});
 
-						var $modal = $(this),
-							$modalImg = $modal.find('img');
+				// Prevent certain events inside the panel from bubbling.
+					$sidebar.on('click touchend touchstart touchmove', function(event) {
 
-						// Locked? Bail.
-							if ($modal[0]._locked)
+						// >large? Bail.
+							if (!skel.breakpoint('large').active)
 								return;
 
-						// Already hidden? Bail.
-							if (!$modal.hasClass('visible'))
+						// Prevent propagation.
+							event.stopPropagation();
+
+					});
+
+				// Hide panel on body click/tap.
+					$body.on('click touchend', function(event) {
+
+						// >large? Bail.
+							if (!skel.breakpoint('large').active)
 								return;
 
-						// Lock.
-							$modal[0]._locked = true;
+						// Deactivate.
+							$sidebar.addClass('inactive');
 
-						// Clear visible, loaded.
-							$modal
-								.removeClass('loaded')
+					});
 
-						// Delay.
-							setTimeout(function() {
+			// Scroll lock.
+			// Note: If you do anything to change the height of the sidebar's content, be sure to
+			// trigger 'resize.sidebar-lock' on $window so stuff doesn't get out of sync.
 
-								$modal
-									.removeClass('visible')
+				$window.on('load.sidebar-lock', function() {
 
-								setTimeout(function() {
+					var sh, wh, st;
 
-									// Clear src.
-										$modalImg.attr('src', '');
+					// Reset scroll position to 0 if it's 1.
+						if ($window.scrollTop() == 1)
+							$window.scrollTop(0);
 
-									// Unlock.
-										$modal[0]._locked = false;
+					$window
+						.on('scroll.sidebar-lock', function() {
 
-									// Focus.
-										$body.focus();
+							var x, y;
 
-								}, 475);
+							// IE<10? Bail.
+								if (skel.vars.IEVersion < 10)
+									return;
 
-							}, 125);
+							// <=large? Bail.
+								if (skel.breakpoint('large').active) {
 
-					})
-					.on('keypress', '.modal', function(event) {
+									$sidebar_inner
+										.data('locked', 0)
+										.css('position', '')
+										.css('top', '');
 
-						var $modal = $(this);
+									return;
 
-						// Escape? Hide modal.
-							if (event.keyCode == 27)
-								$modal.trigger('click');
+								}
 
-					})
-					.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>')
-						.find('img')
-							.on('load', function(event) {
+							// Calculate positions.
+								x = Math.max(sh - wh, 0);
+								y = Math.max(0, $window.scrollTop() - x);
 
-								var $modalImg = $(this),
-									$modal = $modalImg.parents('.modal');
+							// Lock/unlock.
+								if ($sidebar_inner.data('locked') == 1) {
 
-								setTimeout(function() {
+									if (y <= 0)
+										$sidebar_inner
+											.data('locked', 0)
+											.css('position', '')
+											.css('top', '');
+									else
+										$sidebar_inner
+											.css('top', -1 * x);
 
-									// No longer visible? Bail.
-										if (!$modal.hasClass('visible'))
-											return;
+								}
+								else {
 
-									// Set loaded.
-										$modal.addClass('loaded');
+									if (y > 0)
+										$sidebar_inner
+											.data('locked', 1)
+											.css('position', 'fixed')
+											.css('top', -1 * x);
 
-								}, 275);
+								}
 
-							});
+						})
+						.on('resize.sidebar-lock', function() {
+
+							// Calculate heights.
+								wh = $window.height();
+								sh = $sidebar_inner.outerHeight() + 30;
+
+							// Trigger scroll.
+								$window.trigger('scroll.sidebar-lock');
+
+						})
+						.trigger('resize.sidebar-lock');
+
+					});
+
+		// Menu.
+			var $menu = $('#menu'),
+				$menu_openers = $menu.children('ul').find('.opener');
+
+			// Openers.
+				$menu_openers.each(function() {
+
+					var $this = $(this);
+
+					$this.on('click', function(event) {
+
+						// Prevent default.
+							event.preventDefault();
+
+						// Toggle.
+							$menu_openers.not($this).removeClass('active');
+							$this.toggleClass('active');
+
+						// Trigger resize (sidebar lock).
+							$window.triggerHandler('resize.sidebar-lock');
+
+					});
+
+				});
 
 	});
 
