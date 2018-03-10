@@ -4,406 +4,236 @@
 	<head>
 		<title>Portfolio</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-
-		<!-- Start of Async Drift Code -->
-		<script>
-				!function() {
-					var t;
-					if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-					t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-					t.factory = function(e) {
-						return function() {
-							var n;
-							return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-						};
-					}, t.methods.forEach(function(e) {
-						t[e] = t.factory(e);
-					}), t.load = function(t) {
-						var e, n, o, i;
-						e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-						o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
-						n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-					});
-				}();
-				drift.SNIPPET_VERSION = '0.3.1';
-				drift.load('7zebitk9eee8');
-		</script>
-		<!-- End of Async Drift Code -->
-
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+			<div id="wrapper">
 
-				<!-- One -->
-					<section class="banner style2 fullscreen content-align-center">
-						<div class="content">
-							<h1>Mi portfolio</h1>
-							<p style="font-size: 15pt;">¿Quieres conocer más a fondo todos los trabajos que he realizado?<br>Pues este es el mejor apartado para visualizar todo lo que he realizado en cada rama de conocimientos</p>
-							<ul class="actions vertical">
-								<li><a href="../index.html" class="button big wide smooth-scroll-middle">Ir al Inicio</a></li>
-							</ul>
-						</div>
-						<div class="image parallax" style="background-image: url('images/cab.jpg');">
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section class="spotlight style4 color5 invert orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2 style="color:#ffffff;">Audiovisuales</h2>
-							<p style="color:#ffffff;">Dentro de este apartado, encontrarás mi manejo con diversos programas, y también trabajos que he realizado como vídeos o archivos de audio. Por eso, si quieres saber más, no dudes en pinchar el siguiente botón.</p>
-							<ul class="actions vertical" style="color:#ffffff;">
-								<li><a href="../404.html" class="button">Más Información</a></li>
-							</ul>
-						</div>
-						<div class="image parallax" style="background-image: url('images/radio.jpg');">
-						</div>
-					</section>
-
-					<section class="spotlight style4 orient-right content-align-left image-position-right onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Diseño Gráfico</h2>
-							<p>El diseño es algo importante, ya que la primera impresión es lo que cuenta. Por eso aquí podrás ver los trabajos que he realizado desde mis 12 años, aplicando diversos estilos de diseñoy como no, siguiendo las actuales modas como "Material Design". Por eso, si quieres saber más, no dudes en pinchar el siguiente botón.</p>
-							<ul class="actions vertical">
-								<li><a href="#" class="button">Más Información</a></li>
-							</ul>
-						</div>
-						<div class="image parallax" style="background-image: url('images/desig.jpg');">
-						</div>
-					</section>
-
-					<section class="spotlight style4 color6 invert orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2 style="color:#ffffff;">Fotografía</h2>
-							<p style="color:#ffffff;">Los buenos momentos quedan guardados en la memoria, pero también hay que retratarlos, por eso en mis ratos libres me dedico a fotografiar los hermosos paisajes que nos rodean, animales, personas, etc. Por eso, si quieres saber más, no dudes en pinchar el siguiente botón.</p>
-							<ul class="actions vertical" style="color:#ffffff;">
-								<li><a href="../404.html" class="button">Más Información</a></li>
-							</ul>
-						</div>
-						<div class="image parallax" style="background-image: url('images/foto.jpg');">
-						</div>
-					</section>
-
-					<section class="spotlight style4 orient-right content-align-left image-position-right onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Informática</h2>
-							<p>Podrás ver con que lenguajes sé programar, el uso de sistemas operativos, y también podrás encontrar que proyectos estoy desarrollando. Por eso, si quieres saber más, no dudes en pinchar el siguiente botón.</p>
-							<ul class="actions vertical">
-								<li><a href="#" class="button">Más Información</a></li>
-							</ul>
-						</div>
-						<div class="image parallax" style="background-image: url('images/code.png');">
-						</div>
-					</section>
-
-
-				<!-- Three
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Tempus adipiscing</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions vertical">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
-						</div>
-					</section>
-
-				<!-- Four
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Pharetra etiam nulla</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions vertical">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight03.jpg" alt="" />
-						</div>
-					</section>
-
-				<!-- Five
-					<section class="wrapper style1 align-center">
+				<!-- Main -->
+					<div id="main">
 						<div class="inner">
-							<h2>Massa sed condimentum</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+
+							<!-- Header -->
+								<header id="header">
+									<center><a href="../index.html" class="logo"><img src="images/logo.png" content="width=device-width"></a><center>
+									<ul class="icons">
+										<li><a href="https://twitter.com/_jellowchu_" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									  <!-- <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li> -->
+										<li><a href="https://www.instagram.com/jeluchu/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+									  <li><a href="https://github.com/Jeluchu" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+									  <li><a href="https://www.linkedin.com/in/jesusmariacalderon/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>¡Bienvenidos/as<br />
+											a mi portfolio!</h1>
+											<p>Programador · Creativo · Diseñador Gráfico · <br> Creador de contenidos audiovisuales</p>
+										</header>
+										<p>En esta parte de mi página web, podrás conocer todos los trabajos que he ido realizando, desde diseño gráfico, hasta programación, pasando también por la creación de contenidos. Por eso te invito a que véas al completo todos mis trabajos.</p>
+										<p>Actualmente, para poder triunfar, debes tener conocimiento de muchas cosas, y no centrarte en algo en concreto, es por eso que intento estudiar y aprender cosas que me gustan y que quizás me valgan en mi vida profesional.</p>
+									<!--	<ul class="actions">
+											<li><a href="#" class="button big">Saber más</a></li>
+										</ul> -->
+									</div>
+									<span class="image object">
+										<img src="images/cabecera.png" alt="cabecera" />
+									</span>
+								</section>
+
+							<!-- Section -->
+						<!--		<section>
+									<header class="major">
+										<h2>Erat lacinia</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon fa-diamond"></span>
+											<div class="content">
+												<h3>Portitor ullamcorper</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-paper-plane"></span>
+											<div class="content">
+												<h3>Sapien veroeros</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-rocket"></span>
+											<div class="content">
+												<h3>Quam lorem ipsum</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-signal"></span>
+											<div class="content">
+												<h3>Sed magna finibus</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+									</div>
+								</section> -->
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>DESTACADOS</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="images/elipa.png" alt="" /></a>
+											<h3>PROYECTO "LA ELIPA"</h3>
+											<p>Página de información del barrio de La Elipa, el cuál lleva desde 2014. Además de informar se intenta fomentar el comercio dentro del barrio.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">+INFO</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pascalina.png" alt="" /></a>
+											<h3>PASCALINA</h3>
+											<p>Este es un proyecto que salió tras una clase de programación. Se trata de una calculadora escrita en el "Lenguage de C" y que está en desarrollo.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">+INFO</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/flipa.png" alt="" /></a>
+											<h3>FLIPA NEWS</h3>
+											<p>Fue un periódico escolar, el cuál maqueté y los contenidos eran realizados por todos mis compañeros de clase. En él entrevistábamos a los profesores, etc.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">+INFO</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/radio.png" alt="" /></a>
+											<h3>RADIO "LA ELIPA"</h3>
+											<p>Aquí encontrarás todos los programas de "Conoce tu barrio" que he editado, ya que he sido el técnico y también locutor de "Radio La Elipa"</p>
+											<ul class="actions">
+												<li><a href="#" class="button">+INFO</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3>MEZCLAS DE MÚSICA</h3>
+											<p>En eventos como Cabalgatas de Reyes Magos, he realizado la mezcla de música para alguna de sus carrozas, basándome en el evento y el tema de la misma</p>
+											<ul class="actions">
+												<li><a href="#" class="button">+INFO</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3>DISEÑOS Y CARTELERÍA</h3>
+											<p>El diseño es algo importante, pero para ello hay que tener creatividad, por eso, aquí te muestro todos los trabajos y diseños que he realizado.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">+INFO</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+
 						</div>
+					</div>
 
-						<!-- Gallery
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
-									<a href="images/gallery/fulls/01.jpg" class="image">
-										<img src="images/gallery/thumbs/01.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/02.jpg" class="image">
-										<img src="images/gallery/thumbs/02.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Feugiat Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/03.jpg" class="image">
-										<img src="images/gallery/thumbs/03.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Amet</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/04.jpg" class="image">
-										<img src="images/gallery/thumbs/04.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ultrices Magna</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-
-					</section>
-
-				<!-- Six
-					<section class="wrapper style1 align-center">
+				<!-- Sidebar -->
+					<div id="sidebar">
 						<div class="inner">
-							<h2>Ipsum sed consequat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major fa-diamond"></span>
-									<h3>Lorem</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-save"></span>
-									<h3>Ipsum</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-bar-chart"></span>
-									<h3>Dolor</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-wifi"></span>
-									<h3>Amet</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-cog"></span>
-									<h3>Magna</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Tempus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-desktop"></span>
-									<h3>Aliquam</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-refresh"></span>
-									<h3>Elit</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-hashtag"></span>
-									<h3>Morbi</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-bolt"></span>
-									<h3>Turpis</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-envelope"></span>
-									<h3>Ultrices</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-leaf"></span>
-									<h3>Risus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-							</div>
-						</div>
-					</section>
 
-				<!-- Seven
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="field half first">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" value="" />
-								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" value="" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="6"></textarea>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menú</h2>
+									</header>
+									<ul>
+										<li><a href="../index.html">Inicio</a></li>
+										<li><a href="../sobremi/sobremi.html">Sobre Mí</a></li>
+										<li>
+											<span class="opener">Portfolio</span>
+											<ul>
+												<li><a href="#">Audiovisuales</a></li>
+												<li><a href="#">Diseño Gráfico</a></li>
+												<li><a href="#">Fotografía</a></li>
+												<li><a href="#">Periodísmo</a></li>
+												<li><a href="#">Programación</a></li>
+
+											</ul>
+										</li>
+										<li><a href="#">Proyectos</a></li>
+									<!--	<li><a href="#"></a></li>
+
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li> -->
+										<li><a href="#">Currículum Vitae</a></li>
+										<li><a href="#">Contacto</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>ÚLTIMAS NOTICIAS</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/not1.png" alt="noticia1" /></a>
+											<p><strong>¡Japan Weekend de Madrid!</strong> <br> Soy otaku, para aquellos que no sepan que es, simplemente puedo decir que soy friki de lo que me gusta</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/not2.png" alt="noticia2" /></a>
+											<p><strong>Cabalgata de Reyes Magos Ciudad Lineal</strong><br>En enero participo en una de las carrozas que participan en esta cabalgata, gran día de repartir ilusión a los más peques de la casa</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p><strong>¡BioCultura!</strong><br>Hay que ser naturales y para ello, en IFEMA nos acercan a los productos ecológicos que hay en el mercado</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+						<!--		<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
+										<li class="fa-phone">(000) 000-0000</li>
+										<li class="fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section> -->
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright"><p>Jéluchu Developer &copy; 2018 <br> Diseñado por: <a href="https://github.com/Jeluchu">Jesús Mª</a></p>
+								</footer>
 
 						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center color1 invert">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://twitter.com/_jellowchu_" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.instagram.com/jeluchu/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/Jeluchu" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/jesusmariacalderon/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="icons">
-								<center><li style="color:#ffffff;">Jéluchu Developer &copy; 2018</li><li style="color:#ffffff;">Diseñado por: <a href="https://github.com/Jeluchu">Jesús Mª</a></li></center>
-							</ul>
-						</div>
-					</footer>
+					</div>
 
 			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
 	</body>
