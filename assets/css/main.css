@@ -1,6 +1,28 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
+#overbox3 {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999999;
+    display: block;
+}
+#infobox3 {
+    margin: auto;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    vertical-align:middle;
+    background-color: #ffb900;
+}
+#infobox3 p {
+    line-height:18px;
+    font-size:12px;
+}
+
+
 .items.onscroll-fade-in > * > .inner {
 	-moz-transition: opacity 0.75s ease-in-out;
 	-webkit-transition: opacity 0.75s ease-in-out;
