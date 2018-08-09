@@ -2059,7 +2059,7 @@ a.likes-count span {position: relative; top: -1px}
 
 /* icon hover effect style 8 */
 .social-icon-style-8 ul li a {text-align: center; width: auto; height: auto}
-.social-icon-style-8 a:hover { color: #ff214f;}
+.social-icon-style-8 a:hover { color: #03d6c3;}
 
 /* icon hover effect style 9 */
 .social-icon-style-9 ul li a {text-align: center; width: auto; height: auto}
@@ -3621,8 +3621,8 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto }
 ====================================== */
 
 /* scroll to top */
-.scroll-top-arrow, .scroll-top-arrow:focus { color: #fff; background: #878787; line-height: 28px; display: none; height: 30px; width: 30px; padding: 0; position: fixed; right: 45px; text-align: center; text-decoration: none; top: 91%; z-index: 10006; border-radius: 100%;}
-.scroll-top-arrow:hover {background: #000; opacity: .8; color: #fff; border-color: #ff214f}
+.scroll-top-arrow, .scroll-top-arrow:focus { color: #000; background: #0ecab9; line-height: 28px; display: none; height: 30px; width: 30px; padding: 0; position: fixed; right: 45px; text-align: center; text-decoration: none; top: 91%; z-index: 10006; border-radius: 100%;}
+.scroll-top-arrow:hover {background: #fff; opacity: .8; color: #000; border-color: #ff214f}
 .scroll-top-arrow i {line-height: 30px;  position: relative;}
 
 .bg-dark-footer{background-color:#141414;}
