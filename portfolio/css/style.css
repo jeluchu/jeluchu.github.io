@@ -111,9 +111,6 @@ h6 {font-size:25px; line-height:30px}
 .text-very-light-gray {color:#ededed}
 .text-deep-pink {color:#ff214f}
 
-/* NEW COLORS */
-.text-deep-green {color:#20a47c}
-
 /* dropcap */
 .first-letter {float: left; font-size: 50px; line-height: auto; margin: 0 20px 0 0; text-align: center; padding: 10px 0; font-weight: 600}
 .first-letter-big {float: left; font-size: 110px; line-height: 110px; margin: 0 20px 0 0; padding:0 8px;  text-align: center; font-weight: 600; position: relative;}
@@ -152,9 +149,6 @@ a.text-medium-gray-hover:hover {color:#939393 !important;}
 a.text-extra-light-gray-hover:hover {color:#b7b7b7 !important;}
 a.text-light-gray-hover:hover {color:#d6d5d5 !important;}
 a.text-very-light-gray-hover:hover {color:#ededed !important;}
-
-/* NEW COLORS */
-a.text-deep-green-hover:hover, a.text-deep-green-hover:focus {color:#20a47c !important;}
 
 /* letter spacing */
 .no-letter-spacing {letter-spacing:0px}
