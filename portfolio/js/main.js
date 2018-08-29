@@ -2065,9 +2065,9 @@ $(document).ready(function () {
         var instaFeedStyle1 = new Instafeed({
             target: 'instaFeed-style1',
             get: 'user',
-            userId: 5640046896,
+            userId: 4125527622,
             limit: '8',
-            accessToken: '5640046896.1677ed0.f7cd85767e124a9f9f8d698cb33252a0',
+            accessToken: '4125527622.f79979c.ab4f885a11e5479d8315ccf4f12aa74d',
             resolution: "low_resolution",
             error: {
                 template: '<div class="col-md-12 col-sm-12 col-xs-12"><span class=text-center>No Images Found</span></div>'
