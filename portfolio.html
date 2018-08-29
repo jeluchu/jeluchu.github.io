@@ -73,6 +73,30 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="https://www.macarteycreacion.com/jeluchu/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+        <script>
+        window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#252e39"
+            },
+            "button": {
+              "background": "#00a890"
+            }
+          },
+          "theme": "edgeless",
+          "content": {
+            "message": "Este sitio web usa cookies para mejorar tu experiencia a la hora de navegar por nuestra página",
+            "dismiss": "¡De acuerdo!",
+            "link": "Más información",
+            "href": "https://jeluchu.github.io/politicacookies.html"
+          }
+        })});
+        </script>
+
     </head>
     <body>
 
