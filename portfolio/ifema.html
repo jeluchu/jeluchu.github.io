@@ -74,6 +74,49 @@
         <meta name="msapplication-TileImage" content="https://www.macarteycreacion.com/jeluchu/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
+        <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        </style>
+
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
         <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
         <script>
@@ -291,7 +334,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+          </section>
 
         <section class="wow fadeIn border-top border-width-1 border-color-medium-gray no-padding">
             <div class="container-fluid">
@@ -312,7 +355,7 @@
                         <div class="width-45 text-right display-table-cell vertical-align-middle">
                             <div class="blog-nav-link blog-nav-link-next text-extra-dark-gray">
                                 <span class="text-medium-gray text-extra-small display-block text-uppercase xs-display-none">Siguiente Proyecto</span>
-                                <a href="single-project-page-08.html">
+                                <a id="myBtn">
                                     <i class="ti-arrow-right blog-nav-icon"></i>
                                     Betatester
                                 </a>
@@ -322,6 +365,24 @@
                 </div>
             </div>
         </section>
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+              <b>BETATESTER BQ AQUARIS M5.5</b>
+              <hr/>
+              Tras estar usando durante un tiempo un dispositivo móvil de la marca "BQ", salió en fase beta el sistema operativo Android Nougat, el cuál sería el último sistema operativo del que dispondría este modelo de teléfono. Al disponer yo de uno en mi poder decidí apuntarme a la fase beta del mismo para poder comprobar el correcto funcionamiento de dicho sistema en mi móvil.
+              <br/><br/>
+              Cada betatester que estaba probando este sistema en su dispositivo Aquaris M5.5, realizaba las observaciones o reportaba los fallos mediante el foro que tiene habilitado BQ en su web, de ese modo podríamos comprobarlo el resto para que los desarrolladores corrigieran los fallos y dejasen lo más pulida posible esta última versión.
+              <br/><br/>
+              Estuvo alrededor de 1 año aproximadamente la fase beta, hasta que todos los usuarios pudieran usar este sistema operativo.
+            </p>
+          </div>
+
+        </div>
+
 
         <footer class="footer-center-logo padding-five-tb xs-padding-30px-tb bg-dark-mode">
             <div class="container">
@@ -441,5 +502,33 @@
 
         <!-- SETTINGS -->
         <script type="text/javascript" src="js/main.js"></script>
+
+        <script>
+          // Get the modal
+          var modal = document.getElementById('myModal');
+
+          // Get the button that opens the modal
+          var btn = document.getElementById("myBtn");
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks the button, open the modal
+          btn.onclick = function() {
+              modal.style.display = "block";
+          }
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+              modal.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+        </script>
     </body>
 </html>
