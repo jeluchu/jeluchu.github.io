@@ -436,6 +436,9 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .btn.btn-deep-pink {background: #ff214f; border-color: #ff214f; color: #ffffff}
 .btn.btn-deep-pink:hover, .btn.btn-deep-pink:focus {background: transparent; border-color: #ff214f; color: #ff214f}
 
+.btn.btn-deep-green {background: #0fa690; border-color: #0fa690; color: #ffffff}
+.btn.btn-deep-green:hover, .btn.btn-deep-green:focus {background: transparent; border-color: #0fa690; color: #0fa690}
+
 /* button transparent */
 .btn.btn-transparent-white {background: transparent; border-color: #ffffff; color: #ffffff}
 .btn.btn-transparent-white:hover, .btn.btn-transparent-white:focus {background: #ffffff; border-color: #ffffff; color: #232323}
