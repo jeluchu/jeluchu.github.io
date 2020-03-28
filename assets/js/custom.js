@@ -1774,7 +1774,7 @@ function contactValidator() {
     contact_form.on('submit', function (e) {
         // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
-            var url = "https://formsubmit.co/infojeluchu@gmail.com";
+            var url = "mailto:infojeluchu@gmail.com";
 
             // POST values in the background the the script URL
             $.ajax({
