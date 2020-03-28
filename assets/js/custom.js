@@ -1764,7 +1764,7 @@ function slick_client(wind) {
 }
 
 
-function contactValidator() {
+/*function contactValidator() {
     var contact_form = $('#contact-form');
     if (contact_form < 1) {
         return;
@@ -1803,7 +1803,7 @@ function contactValidator() {
             return false;
         }
     });
-}
+}*/
 
 
 function initMap() {
