@@ -154,7 +154,28 @@
               <div class="col-lg-6">
                 <div class="form-box">
                   <h3>Escríbenos</h3>
-                  <form id="contact-form" class="form" method="post" action="mailto:infojeluchu@gmail.com">
+                  <form id="contact-form" action="https://formspree.io/infojeluchu@gmail.com" method="post">
+                      <div>
+                        <div class="entry">
+                          <label>¿Cuál es tu nombre?</label>
+                          <input type="text" name="nombre" id="name" placeholder="Nombre*" class="border-radius-4 bg-white medium-input">
+                        </div>
+
+                        <div class="entry">
+                          <label>¿Cuál es tu e-mail?</label>
+                          <input type="text" name="email" id="email" placeholder="E-mail*" class="border-radius-4 bg-white medium-input">
+                        </div>
+
+                        <div class="entry">
+                          <label>¡Cuéntame!</label>
+                          <textarea name="mensaje" id="comment" placeholder="Escribe tu mensaje" rows="5" class="border-radius-4 bg-white medium-textarea"></textarea>
+                        </div>
+
+                        <button id="contact-us-button" type="submit" class="btn btn-small border-radius-4 btn-dark-gray">Enviar</button>
+                      </div>
+                  </form>
+
+                <!--  <form id="contact-form" class="form" method="post" action="mailto:infojeluchu@gmail.com">
                     <div class="messages"></div>
                     <div class="input__wrap controls">
                       <div class="form-group">
@@ -190,7 +211,7 @@
                         <button id="contact-us-button" type="submit">Enviar</button>
                       </div>
                     </div>
-                  </form>
+                  </form> -->
                 </div>
               </div>
             </div>
