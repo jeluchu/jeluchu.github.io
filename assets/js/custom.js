@@ -41,7 +41,7 @@
         viewAllWork();
         slider().run();
         $("a.vid").YouTubePopUp();
-        contactValidator();
+      //  contactValidator();
 
     }
 
