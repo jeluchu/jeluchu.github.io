@@ -1,22 +1,957 @@
-<!doctype html>
-<title>Mantenimiento</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+<!DOCTYPE html>
+<html lang="es-ES">
 
-<article>
-    <h1>¡Volveremos pronto!</h1>
-    <div>
-        <p>
-          Disculpa las molestias, estamos realizando algunas tareas de mantenimiento en este momento.
-          Si necesitas contactar conmigo, puedes <a href="mailto:jesusmarcalderon@gmail.com">contactar</a> conmigo.
-          Volveremos a estar en línea en breve con novedades
-        </p>
-        <p>&mdash; Jéluchu</p>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="descrption" content="Si eres un apasionado de todo aquello a lo que dedicas tiempo y esfuerzo, quieres mejorar tu marca o darle un nuevo aire fresco, no lo dudes y entra para conocer nuestros trabajos" />
+    <meta name="keyword" content="creativo, moderno, Jéluchu, jeluchu, creatividad, impulsado creatividad, portfolio, diseñador gráfico, programador, locutor, técnico, radio, minimal, modern, multipurpose, personal, portfolio" />
+
+    <title>Jéluchu - Inicio</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://www.macarteycreacion.com/jeluchu/favicon/android-icon-192x192.png" type="image/x-icon" />
+    <link rel="icon" href="https://www.macarteycreacion.com/jeluchu/favicon/android-icon-192x192.png" type="image/x-icon" />
+
+    <link href="assets/css/plugins.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
+
+  <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-analytics.js"></script>
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyBuJEC30JUfU1fpXLdZnjPFOwyYFYHzX_0",
+      authDomain: "jeluchu.firebaseapp.com",
+      databaseURL: "https://jeluchu.firebaseio.com",
+      projectId: "jeluchu",
+      storageBucket: "jeluchu.appspot.com",
+      messagingSenderId: "664062423440",
+      appId: "1:664062423440:web:8919a78553921856004315",
+      measurementId: "G-G8E3RSM02D"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <div class="preloader">
+      <div class="preloader-after"></div>
+      <div class="preloader-before"></div>
+      <div class="preloader-block">
+          <div class="title">Jéluchu</div>
+          <div class="percent">0</div>
+          <div class="loading">¡Impulsando la creatividad!</div>
+      </div>
+      <div class="preloader-bar">
+          <div class="preloader-progress"></div>
+      </div>
+  </div>
+
+    <div class="dsn-nav-bar">
+        <div class="site-header">
+            <div class="extend-container">
+                <div class="inner-header">
+                    <div class="main-logo">
+                        <a href="index.html">
+                            <img class="dark-logo" src="https://macarteycreacion.com/jeluchu/logo/jeluchu.png" alt="" />
+                            <img class="light-logo" src="https://macarteycreacion.com/jeluchu/logo/jeluchu.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <nav class=" accent-menu main-navigation">
+                    <ul class="extend-container">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Sobre Mí</a></li>
+                        <li><a href="work.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contacta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-top header-top-hamburger">
+            <div class="header-container">
+                <div class="logo main-logo">
+                    <a href="index.html">
+                        <img class="dark-logo" src="https://macarteycreacion.com/jeluchu/logo/jeluchu.png" alt="" />
+                        <img class="light-logo" src="https://macarteycreacion.com/jeluchu/logo/jeluchu.png" alt="" />
+                    </a>
+                </div>
+
+                <div class="menu-icon" data-dsn="parallax" data-dsn-move="5">
+                    <div class="icon-m">
+                        <i class="menu-icon-close fas fa-times"></i>
+                        <span class="menu-icon__line menu-icon__line-left"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line menu-icon__line-right"></span>
+                    </div>
+
+                    <div class="text-menu">
+                        <div class="text-button">Menú</div>
+                        <div class="text-open">Abrir</div>
+                        <div class="text-close">Cerrar</div>
+                    </div>
+                </div>
+
+                <div class="nav">
+                    <div class="inner">
+                        <div class="nav__content">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-content">
+                    <div class="inner-content">
+                        <address class="v-middle">
+                            <span>
+                              Somos bombillas andantes<br>
+                              que no deberían ir por la vida apagadas,<br>
+                              es por eso que hay<br> que impulsar las ideas creativas
+                            </span>
+                        </address>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-</article>
+
+    <main class="main-root">
+        <div id="dsn-scrollbar">
+            <div class="dsn-slider" data-dsn-header="project">
+                <div class="dsn-root-slider" id="dsn-hero-parallax-img">
+                    <div class="slide-inner">
+                        <div class="swiper-wrapper">
+                            <div class="slide-item swiper-slide">
+                                <div class="slide-content">
+                                    <div class="slide-content-inner">
+                                        <div class="project-metas">
+                                            <div class="project-meta-box project-work cat">
+                                                <span>Proyecto Completo</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="title-text-header">
+                                            <div class="title-text-header-inner">
+                                                <a href="laelipaactiva.html" class="effect-ajax" data-dsn-ajax="slider">
+                                                    La Elipa Activa
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <p>Lanzamiento de un barrio entero a la red, para informar de todo
+                                           lo que ocurre dentro de él a todos los vecinos/as e impulsar el comercio
+                                           de la zona</p>
+
+                                        <div class="link-custom">
+                                            <a href="laelipaactiva.html" class="image-zoom effect-ajax" data-dsn="parallax"
+                                                data-dsn-ajax="slider">
+                                                <span>Ver +Info</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="image-bg cover-bg" data-image-src="https://macarteycreacion.com/jeluchu/portfolio/released/laelipa.jpg"
+                                        data-overlay="4">
+                                        <img src="https://macarteycreacion.com/jeluchu/portfolio/released/laelipa.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide-item swiper-slide">
+                                <div class="slide-content">
+                                    <div class="slide-content-inner">
+                                        <div class="project-metas">
+                                            <div class="project-meta-box project-work cat">
+                                                <span>Aplicación Móvil</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="title-text-header">
+                                            <div class="title-text-header-inner">
+                                                <a href="aruppi.html" class="effect-ajax" data-dsn-ajax="slider">
+                                                    Aruppi
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <p>Aplicación móvil desarrollada con el fin de proporcionar toda la información de tus animes,
+                                           mangas y novelas ligeras favoritas, además de poder escuchar música relacionada con el género
+                                           japonés (K-Pop/J-Pop)</p>
+
+                                        <div class="link-custom">
+                                            <a href="aruppi.html" class="image-zoom effect-ajax" data-dsn="parallax"
+                                                data-dsn-ajax="slider">
+                                                <span>Ver +Info</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="image-bg cover-bg" data-image-src="https://macarteycreacion.com/jeluchu/portfolio/released/aruppi.jpg"
+                                        data-overlay="5">
+                                        <img src="https://macarteycreacion.com/jeluchu/portfolio/released/aruppi.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide-item swiper-slide">
+                                <div class="slide-content">
+                                    <div class="slide-content-inner">
+                                        <div class="project-metas">
+                                            <div class="project-meta-box project-work cat">
+                                                <span>Proyecto completo</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="title-text-header">
+                                            <div class="title-text-header-inner">
+                                                <a href="laarroba.html" class="effect-ajax" data-dsn-ajax="slider">
+                                                    La Arroba
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                          Asociación cultural de comerciantes y usuarios que está modernizando la forma de dar
+                                          a conocer todos los comercios de la zona realizando un directorio comercial tanto web
+                                          como con aplicaciones móviles
+                                        </p>
+
+                                        <div class="link-custom">
+                                            <a href="laarroba.html" class="image-zoom effect-ajax" data-dsn="parallax"
+                                                data-dsn-ajax="slider">
+                                                <span>Ver +Info</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="image-bg cover-bg" data-image-src="https://macarteycreacion.com/jeluchu/portfolio/released/laarroba.jpg"
+                                        data-overlay="4">
+                                        <img src="https://macarteycreacion.com/jeluchu/portfolio/released/laarroba.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide-item swiper-slide">
+                                <div class="slide-content">
+                                    <div class="slide-content-inner">
+                                        <div class="project-metas">
+                                            <div class="project-meta-box project-work cat">
+                                                <span>Podcast</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="title-text-header">
+                                            <div class="title-text-header-inner">
+                                                <a href="vdelaesquina.html" class="effect-ajax" data-dsn-ajax="slider">
+                                                    A la vuelta de la Esquina
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                          Realización de un podcast semanal en una emisora de radio, un programa cargado de
+                                          cultura y curiosidades con todo tipo de temas a tratar. Se realiza todos los viernes
+                                          de 18:00 a 20:00 en LH Magazin
+                                        </p>
+
+                                        <div class="link-custom">
+                                            <a href="vdelaesquina.html" class="image-zoom effect-ajax" data-dsn="parallax"
+                                                data-dsn-ajax="slider">
+                                                <span>Ver +Info</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="image-container">
+                                    <div class="image-bg cover-bg" data-image-src="https://macarteycreacion.com/jeluchu/portfolio/released/vdelaesquina.jpg"
+                                        data-overlay="2">
+                                        <img src="https://macarteycreacion.com/jeluchu/portfolio/released/vdelaesquina.jpg" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="slide-item swiper-slide">
+                                <div class="slide-content">
+                                    <div class="slide-content-inner">
+                                        <div class="project-metas">
+                                            <div class="project-meta-box project-work cat">
+                                                <span>Aplicación Móvil</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="title-text-header">
+                                            <div class="title-text-header-inner">
+                                                <a href="movimadrid.html" class="effect-ajax" data-dsn-ajax="slider">
+                                                    MoviMadrid
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                          Esta aplicación pretende facilitar información a todos los usuarios de la Comunidad de Madrid,
+                                          para moverse por la ciudad, además de informar acerca de Madrid 360 y sus diversos protocolos
+                                          para que tengan en cuenta el desplazamiento según su distintivo
+                                        </p>
+
+                                        <div class="link-custom">
+                                            <a href="movimadrid.html" class="image-zoom effect-ajax" data-dsn="parallax"
+                                                data-dsn-ajax="slider">
+                                                <span>Ver +Info</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="image-bg cover-bg" data-image-src="https://macarteycreacion.com/jeluchu/portfolio/released/movimadrid.jpg"
+                                        data-overlay="2">
+                                        <img src="https://macarteycreacion.com/jeluchu/portfolio/released/movimadrid.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dsn-slider-content"></div>
+
+
+                <div class="nav-slider">
+                    <div class="swiper-wrapper" role="navigation">
+                        <div class="swiper-slide">
+                            <div class="image-container">
+                                <div class="image-bg cover-bg" data-image-src="https://macarteycreacion.com/jeluchu/portfolio/released/laelipa.jpg"
+                                    data-overlay="2">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>01</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image-container">
+                                <div class="image-bg cover-bg" data-image-src="https://macarteycreacion.com/jeluchu/portfolio/released/aruppi.jpg"
+                                    data-overlay="4">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>02</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="image-container">
+                                <div class="image-bg cover-bg" data-image-src="https://macarteycreacion.com/jeluchu/portfolio/released/laarroba.jpg"
+                                    data-overlay="5">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>03</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="image-container">
+                                <div class="image-bg cover-bg" data-image-src="https://macarteycreacion.com/jeluchu/portfolio/released/vdelaesquina.jpg"
+                                    data-overlay="2">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>04</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="image-container">
+                                <div class="image-bg cover-bg" data-image-src="https://macarteycreacion.com/jeluchu/portfolio/released/movimadrid.jpg"
+                                    data-overlay="2">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>05</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="footer-slid" id="descover-holder">
+                    <div class="main-social">
+                        <div class="social-icon">
+                            <div class="social-btn">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.3 23.2">
+                                        <path
+                                            d="M19.4 15.5c-1.2 0-2.4.6-3.1 1.7L7.8 12v-.7l8.5-5.1c.7 1 1.9 1.6 3.1 1.6 2.1 0 3.9-1.7 3.9-3.9S21.6 0 19.4 0s-3.9 1.7-3.9 3.9v.4L7 9.3c-1.3-1.7-3.7-2-5.4-.8s-2.1 3.7-.8 5.4c.7 1 1.9 1.6 3.1 1.6s2.4-.6 3.1-1.6l8.5 5v.4c0 2.1 1.7 3.9 3.9 3.9s3.9-1.7 3.9-3.9c0-2.1-1.7-3.8-3.9-3.8zm0-13.6c1.1 0 1.9.9 1.9 1.9s-.9 1.9-1.9 1.9-1.9-.7-1.9-1.8.8-2 1.9-2zM3.9 13.6c-1.1 0-1.9-.9-1.9-1.9s.9-1.9 1.9-1.9 1.9.9 1.9 1.9-.8 1.9-1.9 1.9zm15.5 7.8c-1.1 0-1.9-.9-1.9-1.9s.9-1.9 1.9-1.9 1.9.9 1.9 1.9-.8 1.8-1.9 1.9z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="social-network">
+                            <li>
+                                <a href="https://t.me/jelusupport/" target="_blank">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/jeluchu" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/jeluchu/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/jesusmariacalderon/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="control-num">
+                        <span class="sup active">01</span>
+                    </div>
+                    <div class="control-nav">
+                        <div class="prev-container" data-dsn="parallax">
+                            <svg viewBox="0 0 40 40">
+                                <path class="path circle" d="M20,2A18,18,0,1,1,2,20,18,18,0,0,1,20,2"></path>
+                                <polyline class="path" points="14.6 17.45 20 22.85 25.4 17.45"></polyline>
+                            </svg>
+                        </div>
+
+                        <div class="next-container" data-dsn="parallax">
+                            <svg viewBox="0 0 40 40">
+                                <path class="path circle" d="M20,2A18,18,0,1,1,2,20,18,18,0,0,1,20,2"></path>
+                                <polyline class="path" points="14.6 17.45 20 22.85 25.4 17.45"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="wrapper">
+
+                <section class="intro-about section-margin">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="intro-content-text">
+
+                                    <h2 data-dsn-grid="move-section" data-dsn-move="-30" data-dsn-duration="100%"
+                                        data-dsn-opacity="1.2" data-dsn-responsive="tablet">
+                                        Hola yo soy, <br /> Jesús Mª
+                                    </h2>
+
+                                    <p data-dsn-animate="text">
+                                      Soy una persona enérgica que realiza con pasión
+                                      todo aquello en lo que cree y le gusta,
+                                      capaz de resolver cualquier problema buscando posibles
+                                      soluciones sin desistir y al que le encanta seguir
+                                      aprendiendo para mejorar.
+                                      <h6 data-dsn-animate="text">Jéluchu</h6>
+                                    <small data-dsn-animate="text">Diseñador · Desarrollador · Locutor/Técnico</small>
+
+                                    <div class="exper">
+                                        <div class="numb-ex">
+                                            <span class="word" data-dsn-animate="text">5</span>
+                                        </div>
+
+                                        <h4 data-dsn-animate="up">AÑOS DE<br> CONTINUA EXPERIENCIA</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="background-mask">
+                        <div class="background-mask-bg"></div>
+                        <div class="img-box">
+                            <div class="img-cent" data-dsn-grid="move-up">
+                                <div class="img-container">
+                                    <img data-dsn-y="30%" src="https://macarteycreacion.com/jeluchu/portfolio/inicio/who.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="our-services-2 section-margin">
+                    <div class="container">
+                        <div class="one-title" data-dsn-animate="up">
+                            <div class="title-sub-container">
+                                <p class="title-sub">Nuestros servicios</p>
+                            </div>
+                            <h2 class="title-main">Impulsa tu creatividad</h2>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="services-item">
+                                    <div class="corner corner-top"></div>
+                                    <div class="corner corner-bottom"></div>
+                                    <div class="icon">
+                                        <img src="assets/img/services/1.png" alt="">
+                                    </div>
+                                    <div class="services-header">
+                                        <h3>DISEÑO GRÁFICO</h3>
+                                    </div>
+                                    <p>
+                                      Realización de diseños para redes sociales
+                                      (Facebook, Twitter, Instagram), UI/UX Design
+                                      para las aplicaciones móviles o para futuras
+                                      páginas web
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="services-item selected">
+                                    <div class="corner corner-top"></div>
+                                    <div class="corner corner-bottom"></div>
+                                    <div class="icon">
+                                        <img src="assets/img/services/2.png" alt="">
+                                    </div>
+                                    <div class="services-header">
+                                        <h3>DESARROLLO MULTIPLATAFORMA</h3>
+                                    </div>
+                                    <p>
+                                      Creación de aplicaciones para dispositivos móviles,
+                                      además de la realización de páginas web sencillas
+                                      e instalación y configuración de sitios Wordpress
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="services-item">
+                                    <div class="corner corner-top"></div>
+                                    <div class="corner corner-bottom"></div>
+                                    <div class="icon">
+                                        <img src="assets/img/services/3.png" alt="">
+                                    </div>
+                                    <div class="services-header">
+                                        <h3>CREACIÓN DE CONTENIDOS</h3>
+                                    </div>
+                                    <p>
+                                      Realización de montajes de vídeo para promociones
+                                      de marcas, creación de vídeo lanzamientos de apps,
+                                      creación de pantallas para redes sociales, etc
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="box-seat box-seat-full section-margin">
+                    <div class="container-fluid">
+                      <div class=" " data-dsn="video" data-overlay="4" data-dsn-ajax="img">
+                          <video class="image-bg cover-bg dsn-video" poster="https://macarteycreacion.com/jeluchu/portfolio/released/laarroba.jpg" autoplay loop
+                              muted>
+                              <source src="https://macarteycreacion.com/jeluchu/portfolio/inicio/intro.mp4" type="video/mp4"
+                                  type="video/mp4">
+                              Tu navegador no es compatible con los vídeos HTML
+                          </video>
+                      </div>
+                        <div class="pro-text">
+                            <h3> Impulsando<br> la creatividad</h3>
+                            <p>
+                              Somos bombillas andantes que no deberían ir por la vida apagadas,
+                              es por eso que hay que impulsar las ideas creativas
+                            </p>
+                            <div class="link-custom">
+                                <a class="image-zoom effect-ajax" href="project-2.html" data-dsn="parallax">
+                                    <span>Sobre mí</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="our-work work-under-header  section-margin" data-dsn-col="3">
+                    <div class="container">
+                        <div class="one-title">
+                            <div class="title-sub-container">
+                                <p class="title-sub">Nuestros trabajos</p>
+                            </div>
+                            <h2 class="title-main">Otros proyectos destacables</h2>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-9 offset-lg-3">
+                                <div class="work-container">
+                                    <div class="slick-slider">
+                                        <div class="work-item slick-slide">
+                                            <img class="has-top-bottom" src="https://macarteycreacion.com/jeluchu/portfolio/mock-2.png" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="lhmagazin.html" data-dsn-grid="move-up" class="effect-ajax">
+
+                                                    <h5 class="cat">Desarrollo Web y App</h5>
+                                                    <h4>LH Magazin</h4>
+                                                    <span><span>Ver +Info</span></span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="work-item slick-slide">
+                                            <img class="has-top-bottom" src="https://macarteycreacion.com/jeluchu/portfolio/mock-12.png" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="unisys.html" data-dsn-grid="move-up" class="effect-ajax">
+
+                                                    <h5 class="cat">Desarrollador Android/iOS</h5>
+                                                    <h4>Unisys</h4>
+                                                    <span><span>Ver +Info</span></span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="work-item slick-slide">
+                                            <img class="has-top-bottom" src="https://macarteycreacion.com/jeluchu/portfolio/mock-9.png" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="vdelaesquina.html" data-dsn-grid="move-up" class="effect-ajax">
+
+                                                    <h5 class="cat">Podcast</h5>
+                                                    <h4>A la Vuelta de la Esquina</h4>
+                                                    <span><span>Ver +Info</span></span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="work-item slick-slide">
+                                            <img class="has-top-bottom" src="https://macarteycreacion.com/jeluchu/portfolio/mock-10.png" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="laarroba.html" data-dsn-grid="move-up" class="effect-ajax">
+
+                                                    <h5 class="cat">Desarrollo Web y App</h5>
+                                                    <h4>La Arroba</h4>
+                                                    <span><span>Ver +Info</span></span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="work-item slick-slide">
+                                            <img class="has-top-bottom" src="https://macarteycreacion.com/jeluchu/portfolio/mock-7.png" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="lledo.html" data-dsn-grid="move-up" class="effect-ajax">
+
+                                                    <h5 class="cat">Community Manager</h5>
+                                                    <h4>Óptica Lledó</h4>
+                                                    <span><span>Ver +Info</span></span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="work-item slick-slide">
+                                            <img class="has-top-bottom" src="https://macarteycreacion.com/jeluchu/portfolio/mock-4.png" alt="">
+                                            <div class="item-border"></div>
+                                            <div class="item-info">
+                                                <a href="ifema.html" data-dsn-grid="move-up" class="effect-ajax">
+
+                                                    <h5 class="cat">Voluntariado</h5>
+                                                    <h4>IFEMA</h4>
+                                                    <span><span>Ver +Info</span></span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="our-news section-margin">
+                    <div class="container">
+                        <div class="one-title" data-dsn-animate="up">
+                            <div class="title-sub-container">
+                                <p class="title-sub">Noticias</p>
+                            </div>
+                            <h2 class="title-main">Últimas publicaciones</h2>
+                        </div>
+                        <div class="custom-container">
+                            <div class="slick-slider">
+                                <div class="item-new slick-slide">
+                                    <div class="image" data-overlay="5">
+                                        <img src="https://macarteycreacion.com/jeluchu/portfolio/inicio/laarrobapp.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="background"></div>
+                                        <h5>Desarrollo · App</h5>
+
+                                        <div class="cta">
+                                            <a href="#">La Arroba en móvil</a>
+                                        </div>
+
+                                        <p>
+                                          Tras el éxito del directorio comercial en la web,
+                                          han decidido lanzar una aplicación móvil con la misma iniciativa
+                                          beneficiando tanto a los comercios como a los usuarios por sus compras
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="item-new slick-slide">
+                                    <div class="image" data-overlay="5">
+                                        <img src="https://macarteycreacion.com/jeluchu/portfolio/released/laelipa.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="background"></div>
+                                        <h5>Community Manager · Proyectos</h5>
+
+                                        <div class="cta">
+                                            <a href="#laelipaencasa.html">#LaElipaEnCasa</a>
+                                        </div>
+
+                                        <p>
+                                          Debido a las muchas consecuencias que a traído el Coronavirus
+                                          han salido muchas iniciativas en todo el mundo, es por eso que
+                                          queremos impulsar al comercio y el entretenimiento de la gente en casa
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="item-new slick-slide">
+                                    <div class="image" data-overlay="5">
+                                        <img src="https://macarteycreacion.com/jeluchu/portfolio/released/aruppi.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="background"></div>
+                                        <h5>Desarrollo · App</h5>
+
+                                        <div class="cta">
+                                            <a href="startaruppi.html">Lanzamiento de 'Aruppi'</a>
+                                        </div>
+
+                                        <p>
+                                          Tras varios meses de desarrollo, hemos lanzado la primera versión
+                                          de esta aplicación que pretende acercar la cultura nipona a la
+                                          comunidad hispanohablante, con música, noticias, podcast, etc
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brand-client section-margin">
+                    <div class="container">
+                        <div class="one-title" data-dsn-animate="up">
+                            <div class="title-sub-container">
+                                <p class="title-sub">Nuestros clientes</p>
+                            </div>
+                            <h2 class="title-main">Tu éxito, <br>nuestra satisfacción</h2>
+                        </div>
+
+                        <div class="wapper-client">
+                            <div class="logo-box">
+                                <img src="https://macarteycreacion.com/jeluchu/portfolio/logos/laarroba.webp" alt="">
+
+                                <div class="info">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+
+                                        <div class="entry">
+                                            <div>
+                                                <h5>La Arroba</h5>
+                                                <a href="https://laarroba.es/" target="_blank">www.laarroba.es</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="logo-box">
+                                <img src="https://macarteycreacion.com/jeluchu/portfolio/logos/lledo.png" alt="">
+
+                                <div class="info">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+
+                                        <div class="entry">
+                                            <div>
+                                                <h5>Óptica Lledó</h5>
+                                                <a href="https://www.opticalledo.es/">www.opticalledo.es</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="logo-box">
+                                <img src="https://macarteycreacion.com/jeluchu/portfolio/logos/laelipa.png" alt="">
+
+                                <div class="info">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+
+                                        <div class="entry">
+                                            <div>
+                                                <h5>La Elipa Activa</h5>
+                                                <a href="https://www.laelipasiqueflipa.com/">www.laelipasiqueflipa.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="logo-box">
+                                <img src="https://macarteycreacion.com/jeluchu/portfolio/logos/vdelaesquina.png" alt="">
+
+                                <div class="info">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+
+                                        <div class="entry">
+                                            <div>
+                                                <h5>A la Vuelta de la Esquina</h5>
+                                                <a href="http://vdelaesquina.gitlab.io/">vdelaesquina.gitlab.io</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="logo-box">
+                                <img src="https://macarteycreacion.com/jeluchu/portfolio/logos/macarteycreacion.png" alt="">
+
+                                <div class="info">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+
+                                        <div class="entry">
+                                            <div>
+                                                <h5>MAC Arte y Creación</h5>
+                                                <a href="http://portfolio.macarteycreacion.com/">www.macarteycreacion.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-up section-margin section-padding">
+                    <div class="container">
+                        <div class="c-wapp">
+                            <a href="contact.html" class="effect-ajax">
+                                <span class="hiring">
+                                    ¡CONTRATA!
+                                </span>
+                                <span class="career">
+                                    ¿Alguna duda? ¡Contacta conmigo!
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <footer>
+                <div class="info">
+                    <div class="contact-footer">
+                        <a href="mailto:jesusmarcalderon@gmail.com" class="email image-zoom" data-dsn="parallax">jesusmarcalderon@gmail.com</a>
+                    </div>
+                    <div class="copyright-social">
+                        <p>© <script>document.write(new Date().getFullYear())</script> Jéluchu</p>
+                        <ul>
+                            <li class="image-zoom" data-dsn="parallax"><a href="https://t.me/jelusupport/" target="_blank">Telegram</a></li>
+                            <li class="image-zoom" data-dsn="parallax"><a href="https://www.instagram.com/jeluchu/" target="_blank">Instagram</a></li>
+                            <li class="image-zoom" data-dsn="parallax"><a href="https://twitter.com/jeluchu" target="_blank">Twitter</a></li>
+                            <li class="image-zoom" data-dsn="parallax"><a href="https://www.linkedin.com/in/jesusmariacalderon/" target="_blank">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <div class="wait-loader">
+        <div class="loader-inner">
+            <div class="loader-circle">
+                <div class="loader-layer"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="global-cursor">
+        <div class="custom-cursor single-cursor effect-cursor">
+            <div class="cursor-container">
+                <div class="cursor-text">
+                    <div class="cursor-text-wrapper">
+                        <div class="cursor-text-value">Scroll</div>
+                    </div>
+                    <div class="cursor-text-wrapper">
+                        <div class="cursor-text-value nth-2">or hold</div>
+                    </div>
+                </div>
+                <div class="cursor-part">
+                    <div class="cursor-item"></div>
+                </div>
+                <div class="cursor-part cursor-left">
+                    <i class="fas fa-caret-left"></i>
+                </div>
+                <div class="cursor-part cursor-right">
+                    <i class="fas fa-caret-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/dsn-grid.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
