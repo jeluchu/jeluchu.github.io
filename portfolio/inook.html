@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title>iNook</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" href="images/icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" href="images/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="images/icons/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" href="images/icons/android-chrome-512x512.png" sizes="512x512" />
+    <link rel="manifest" href="site.webmanifest">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name=" author" content="" />
+
+    <meta property="og:title" content="Onir" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/logo/logo.png" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="" />
+
+    <link rel="stylesheet" href="../assets/css/projects/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/projects/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../assets/css/projects/style.css" />
+    <link rel="stylesheet" href="../assets/css/projects/media.css" />
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/custom-animation.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="../assets/css/meanmenu.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/spacing.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="dark-bg" onselectstart='return false'>
+    <div class="wrapper">
+
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="far fa-angle-double-up"></i>
+        </button>
+
+        <div class="tpoffcanvas-area">
+            <div class="tpoffcanvas">
+                <div class="tpoffcanvas__close-btn">
+                    <button class="close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="tpoffcanvas__logo text-center">
+                    <a href="index.html">
+                        <img src="assets/img/logo/logo-white.png" alt="">
+                    </a>
+                </div>
+                <div class="mobile-menu"></div>
+                <div class="tpoffcanvas__info text-center">
+                    <h4 class="offcanva-title">Impulsando<br>la creatividad</h4>
+                    <a href="https://www.google.com/maps/@23.506657,90.3443647,7z" target="_blank">
+                        La Elipa, Madrid<br>
+                        España
+                    </a>
+                </div>
+                <div class="tpoffcanvas__social">
+                    <div class="social-icon text-center">
+                        <a href="https://www.linkedin.com/in/jesusmariacalderon/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://discord.com/users/411273865642115072" target="_blank"><i
+                                class="fab fa-discord"></i></a>
+                        <a href="https://twitter.com/jeluchu" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/jeluchu/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/jelusupport/" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body-overlay"></div>
+
+        <header>
+
+            <div id="header-sticky"
+                class="header-bottom__area header-mob-space header-bottom__area-2 header-bottom__transparent z-index-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
+                            <div id="logo" class="header-bottom__logo">
+                                <a href="../index.html"><img src="../assets/img/logo/logo-black.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-5 col-lg-5 d-none d-lg-block">
+                            <div class="header-bottom__main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="../index.html">Inicio</a></li>
+                                        <li><a href="../about.html">Sobre mí</a></li>
+                                        <li><a href="../project.html">Portfolio</a></li>
+                                        <li><a href="../contact.html">Contacta</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-8 col-6">
+                            <div class="header-bottom__right d-flex align-items-center justify-content-end">
+                                <div class="header-bottom__btn d-flex align-items-center">
+                                    <a class="tp-btn-cosmic tp-btn-hover alt-color-dark-green d-none d-md-inline-block"
+                                        href="https://drive.google.com/file/d/1x50DzDhjP4Q5wYewEhUydUZoTQ07mFhT/view?usp=share_link"
+                                        target=”_blank”>
+                                        <span class="white-text">Ver CV</span>
+                                        <b></b>
+                                    </a>
+                                    <a class="header-bottom__bar d-lg-none tp-menu-bar" href="javascript:void(0)">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="main-content hp-1">
+            <section class="banner-section" id="home">
+                <div class="container">
+                    <h1>Tu Nookófono<br>
+                        Supervitaminado</h1>
+                    <p class="section-subtitle">
+                        Descubre todos los secretos del juego, escucha las canciones del propio juego<br>
+                        y personaliza la aplicación a tu gusto
+                    </p>
+                    <div class="app-download">
+                        <div class="ios-download ">
+                            <a class="btn-container" href="https://apps.apple.com/es/app/inook/id1610550043"
+                                target="_blank">
+                                <img src="../assets/img/portfolio/inook/app-store.png" alt="">
+                                <span>App Store</span></a>
+                        </div>
+                        <div class="android-download">
+                            <a class="btn-container"
+                                href="https://play.google.com/store/apps/details?id=com.jeluchu.inook" target="_blank">
+                                <img src="../assets/img/portfolio/inook/play-store.png" alt="">
+                                <span>Play Store</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-vectors">
+                        <div class="banner-vector-imgs">
+                            <img class="banner-vector-1" src="../assets/img/portfolio/inook/hp1-banner-vector-1.png"
+                                alt="benner-vectors">
+                            <img class="banner-vector-2" src="../assets/img/portfolio/inook/hp1-banner-vector-2.png"
+                                alt="benner-vectors">
+                            <img class="banner-vector-3" src="../assets/img/portfolio/inook/hp1-banner-vector-3.png"
+                                alt="benner-vectors">
+                            <img class="banner-vector-4" src="../assets/img/portfolio/inook/hp1-banner-vector-4.png"
+                                alt="benner-vectors">
+                            <img class="banner-vector-5" src="../assets/img/portfolio/inook/hp1-banner-vector-5.png"
+                                alt="benner-vectors">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hp-1 banner-carousel owl-carousel owl-theme">
+
+                    <div class="screenshot">
+                        <img src="../assets/img/portfolio/inook/phone-4.png" alt="screenshots" height="614" width="298"
+                            style="margin-top: 0px;">
+                    </div>
+                    <div class="screenshot">
+                        <img src="../assets/img/portfolio/inook/phone-5.png" alt="screenshots" height="481" width="242"
+                            style="margin-top: 110px;">
+                    </div>
+                    <div class="screenshot">
+                        <img src="../assets/img/portfolio/inook/phone-6.png" alt="screenshots" height="438" width="220"
+                            style="margin-top: 210px;">
+                    </div>
+                    <div class="screenshot">
+                        <img src="../assets/img/portfolio/inook/phone-7.png" alt="screenshots" height="406" width="204"
+                            style="margin-top: 160px;">
+                    </div>
+                    <div class="screenshot">
+                        <img src="../assets/img/portfolio/inook/phone-1.png" alt="screenshots" height="406" width="204"
+                            style="margin-top: 160px;">
+                    </div>
+                    <div class="screenshot">
+                        <img src="../assets/img/portfolio/inook/phone-2.png" alt="screenshots" height="438" width="220"
+                            style="margin-top: 210px;">
+                    </div>
+                    <div class="screenshot">
+                        <img src="../assets/img/portfolio/inook/phone-3.png" alt="screenshots" height="481" width="242"
+                            style="margin-top: 110px;">
+                    </div>
+                </div>
+                <div class="watch-now">
+                    <div class="tp-intigration-five-btn btn-container pb-50">
+                        <a class="tp-btn-blue-lg circle-effect-black" style="background: #333333; color: #FEF8E4;"
+                            href="https://youtu.be/YV7piUndSc4" target=”_blank”>Ver tráiler promocional</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="how-it-works" id="how-works">
+                <div class="container">
+                    <h3 class="section-title">¿Cómo funciona iNook?</h3>
+                    <p class="section-subtitle">
+                        La app simula el Nookófono original del juego de Animal Crossing New Horizons
+                        (Nintendo Switch),<br> y te dará darte toda la información, secretos, trucos y diseños del juego
+                    </p>
+                    <div class="working-content">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="work-card in-touch lf">
+                                    <div class="work-img">
+                                        <img src="../assets/img/portfolio/inook/work-vector-1.png" alt="work-img">
+                                    </div>
+
+                                    <h6 class="work-steps">Progreso</h6>
+
+                                    <p class="steps-para">
+                                        Añade en favoritos todos los elementos que tengas,
+                                        y comprueba tus elementos
+                                    </p>
+                                </div>
+                                <div class="work-card review lf">
+                                    <div class="work-img">
+                                        <img src="../assets/img/portfolio/inook/work-vector-2.png" alt="work-img">
+                                    </div>
+
+                                    <h6 class="work-steps">Escucha música</h6>
+
+                                    <p class="steps-para">
+                                        Disfruta de las canciones de Tota K.K
+                                        o el ruido de los guiroides
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="work-center"></div>
+                                <div class="work-center-img">
+                                    <img src="../assets/img/portfolio/inook/phone-screenshot.png" alt="screenshots">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <div class="work-card demo rg">
+                                    <div class="work-img">
+                                        <img src="../assets/img/portfolio/inook/work-vector-3.png" alt="work-img">
+                                    </div>
+
+                                    <h6 class="work-steps">Gran personalización</h6>
+
+                                    <p class="steps-para">
+                                        Personaliza la app a tu gusto, colores, orden, listados, agrupación...
+                                    </p>
+                                </div>
+                                <div class="work-card setup rg">
+                                    <div class="work-img">
+                                        <img src="../assets/img/portfolio/inook/work-vector-4.png" alt="work-img">
+                                    </div>
+
+                                    <h6 class="work-steps">¡Comparte!</h6>
+
+                                    <p class="steps-para">
+                                        Genera un Qr o comparte un enlace para que
+                                        tus amigos o conocidos vean fácilmente
+                                        la información
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-vector">
+                            <img class="vector-1" src="../assets/img/portfolio/inook/hp-1-work.png" alt="vector">
+                            <img class="vector-2" src="../assets/img/portfolio/inook/hp-1-work-2.png" alt="vector">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="features" id="features">
+                <div class="container">
+                    <h3 class="section-title">Algunas características exclusivas</h3>
+                    <p class="section-subtitle">
+                        iNook tiene carácterísticas interesantes tanto para usuarios básicos<br>
+                        como para aquellos usuarios que apoyan la app subscribiéndose
+                    </p>
+                    <div class="feature-vectors">
+                        <img class="feature-vector-1" src="../assets/img/portfolio/inook/circle-dark-green.png" alt="feature-vector">
+                        <img class="feature-vector-2" src="../assets/img/portfolio/inook/semi-circle-cosmiclatte.png" alt="feature-vector">
+                        <img class="feature-vector-3" src="../assets/img/portfolio/inook/circle-dark-green.png" alt="feature-vector">
+                        <img class="feature-vector-4" src="../assets/img/portfolio/inook/semi-circle-green.png" alt="feature-vector">
+                    </div>
+                    <div class="feature-content">
+                        <div class="row">
+                            <div class="col-lg-5 col-sm-12">
+                                <div class="feature-img">
+                                    <img src="../assets/img/portfolio/inook/phone-avatars.png" alt="screenshots">
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-sm-12">
+                                <div class="feature-info">
+                                    <div class="title-top">CARACTERÍSTICA EXCLUSIVA</div>
+                                    <h3 class="section-title">Crea tu propio avatar<br>al estilo Nintendo Switch</h3>
+                                    <p class="section-subtitle">
+                                        Si quieres cambiar la foto de perfil de cualquiera de tus redes sociales
+                                        no dudes en descargarte iNook, ya que podrás crear diversas fotos de
+                                        perfil con los personajes, fondos o marcos al más puro estilo
+                                        Animal Crossing New Horizons
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content boost-productivity">
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12">
+                                <div class="feature-info">
+                                    <div class="title-top">INOOK+</div>
+                                    <h3 class="section-title">Constructor de cartas</h3>
+                                    <p class="section-subtitle">
+                                        Si te subscribes a iNook+, tendrás la posibilidad de escribir cartas
+                                        sobre los diseños que hay actualmente en Animal Crossing New Horizons,
+                                        y posteriormente descargárla en formato de imagen, o enviarla a cualquier
+                                        amigo o familiar
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <div class="feature-img">
+                                    <img src="../assets/img/portfolio/inook/phone-mail.png" alt="screenshots">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="onir-plans" id="pricing">
+                <div class="container">
+                    <h3 class="section-title">
+                        Planes para todos<br>
+                        iNook en tu teléfono</h3>
+                    <p class="section-subtitle">
+                        Selecciona el mejor plan para ti
+                    </p>
+                    <div class="plan-vectors">
+                        <img class="vector-1" src="../assets/img/portfolio/inook/semi-circle-cosmiclatte.png" alt="plan-vector">
+                        <img class="vector-2" src="../assets/img/portfolio/inook/semi-circle-cosmiclatte.png" alt="plan-vector">
+
+                    </div>
+                    <div class="plan-cards">
+                        <div class="plan-card active">
+                            <div class="plan-name">iNook</div>
+                            <span>para usuarios básicos</span>
+                            <div class="plan-amount">
+                                <h3>0€</h3>
+                                <span>/mes</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li><i class="fa-solid fa-circle-check"></i>Visualiza la información de los items</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Vecinos como residentes/favoritos</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Marca los items favoritos</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Personaliza la app a tu gusto</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Lleva el progreso diario</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Escribe tareas personalizadas</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Crea avatares personalizados</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Escucha la música del juego</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Escucha el sonido de los giroides</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Haz "estiramientos grupales" *</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Escanéa tu catálogo con CatalogScanner</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Soporte técnico para incidencias</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Capturapedia de temporada</li>
+                                <li><i class="fa-solid fa-circle-check"></i>+10000 diseños exclusivos</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Agrega amigos a iNook</li>
+                            </ul>
+                        </div>
+                        <div class="plan-card active">
+                            <div class="popularity">
+                                Popular
+                            </div>
+                            <div class="plan-name">iNook+ 30</div>
+                            <span>para insulanos iniciales</span>
+                            <div class="plan-amount l-digit">
+                                <h3>1,99€</h3>
+                                <span>/mes</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li><i class="fa-solid fa-circle-check"></i>Todas las características base de iNook</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Hoja imprimible mensual</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Distintivo iNook+</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Constructor de cartas</li>
+                                <li><i class="fa-solid fa-circle-check"></i>+22 colores extras</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Reordena las aplicaciones *</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Precios de bichos y peces</li>
+                                <li><i class="fa-solid fa-circle-check"></i>+7 actividades extras *</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Tareas personalizadas fijadas *</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Filtros avanzados *</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Letras del capitán</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Iconos premium de la app</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Las sabias palabras de Pascal</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Personajes, fondos y marcos exclusivos *</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Guardado en la nube *</li>
+                            </ul>
+                        </div>
+                        <div class="plan-card active">
+                            <div class="plan-name">iNook+ 365</div>
+                            <span>para insulanos avanzados</span>
+                            <div class="plan-amount">
+                                <h3>19,99€</h3>
+                                <span>/año</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li><i class="fa-solid fa-circle-check"></i>Todas las características base de iNook</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Hoja imprimible mensual</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Distintivo iNook+</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Constructor de cartas</li>
+                                <li><i class="fa-solid fa-circle-check"></i>+22 colores extras</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Reordena las aplicaciones *</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Precios de bichos y peces</li>
+                                <li><i class="fa-solid fa-circle-check"></i>+7 actividades extras *</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Tareas personalizadas fijadas *</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Filtros avanzados *</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Letras del capitán</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Iconos premium de la app</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Las sabias palabras de Pascal</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Personajes, fondos y marcos exclusivos *</li>
+                                <li><i class="fa-solid fa-circle-check"></i>Guardado en la nube *</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="onir-stories">
+                <div class="container">
+                    <h3 class="section-title">Opiniones de YouTubers</h3>
+                    <p class="section-subtitle">
+                        Aquellas personas que han realizado reseñas o vídeos
+                        opinando sobre la aplicación y mostrando las características
+                    </p>
+                    <div class="story-vector">
+                        <img src="../assets/img/portfolio/inook/circle-dark-green.png" alt="vector-img">
+                    </div>
+                    <div class="stories-card mobile-cards">
+                        <div class="story-card">
+                            <img src="../assets/img/portfolio/inook/inook-story-1.png" alt="onir-story">
+                            <div class="story-content">
+                                <h4>La mejor app de ACNH</h4>
+                                <p>
+                                    CobayasGamer, realizó un vídeo dándo su opinión acerca de
+                                    la aplicación de iNook y mostrando su funcionalidad
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=WO9QBMIhuWc" target="_blank">Ver vídeo</a>
+                            </div>
+                        </div>
+                        <div class="story-card">
+                            <img src="../assets/img/portfolio/inook/inook-story-2.png" alt="onir-story">
+                            <div class="story-content">
+                                <h4>Nueva aplicación de ACNH</h4>
+                                <p>
+                                    Cabuig, probó las versiones preeliminares de iNook (versiones beta)
+                                    y mostró el funcionamiento de la app
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=xQXnQX_BEyg" target="_blank">Ver vídeo</a>
+                            </div>
+                        </div>
+                        <div class="story-card">
+                            <img src="../assets/img/portfolio/inook/inook-story-3.png" alt="onir-story">
+                            <div class="story-content">
+                                <h4>Aplicación indispensable</h4>
+                                <p>
+                                    Lolotte Crossing, muestra y opina sobre la aplicación de iNook en
+                                    francés para aquellas personas interesadas
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=JbMUl6OYLY8" target="_blank">Ver vídeo</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="container">
+                    <div class="faq-content-wrap">
+                        <h3 class="section-title text-dark">Preguntas frecuentes</h3>
+                        <div class="qa-content">
+                            <div class="question">¿La app es gratuita? ¿Tiene publicidad?</div>
+                            <div class="answer">
+                                <p>
+                                    La aplicación es gratuita y no tiene publicidad, pero puedes apoyar al desarrollo
+                                    con la subscripción mensual o anual de iNook+, esta subscripción te dará
+                                    características exclusivas dentro de la aplicación
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="qa-content">
+                            <div class="question">¿Tiene los datos recientes del juevo?</div>
+                            <div class="answer">
+                                <p>
+                                    ¡Claro! Actualmente los datos están actualizados,
+                                    y en caso de incluirse nuevos objetos se incluyen de forma remota,
+                                    lo que significa que no tendrás que actualizar la app para obtener
+                                    los nuevos datos, las actualizaciones de la app incluirán mejoras,
+                                    novedades o correcciones
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="qa-content">
+                            <div class="question">¿Qué pasa si no tengo Play Store?</div>
+                            <div class="answer">
+                                <p>
+                                    No te preocupes, si tienes Android pero no la Play Store,
+                                    te damos otra alternativa, la App Gallery, en caso de que
+                                    dispongas de un teléfono de la marca Huawei puedes descargarla
+                                    desde la propia tienda de aplicaciones de Huawei buscándola
+                                    como "iNook" o directamente pulsando en: App Gallery.
+                                    En caso de tener dispositivos de Apple, simplemente tendrás
+                                    que descargar la app desde la App Store.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="qa-content">
+                            <div class="question">¿Puedo importar/exportar datos?</div>
+                            <div class="answer">
+                                <p>
+                                    iNook dispone de un sistema de "Copia de seguridad" de forma local,
+                                    y los que son subscriptores, tendrán la posibilidad de disfrutar
+                                    de una copia de seguridad en la nube dentro de la app, de esta forma
+                                    si desinstalas la aplicación y has subido previamente los datos,
+                                    al instalarla de nuevo podrás importar de nuevo toda tu información,
+                                    recuerda tener a mano tu número de usuario para poder recuperar tu
+                                    información. En el caso de las copias locales te generarán un archivo
+                                    que podrás posteriormente importar dentro de la app, ya sea porque
+                                    te cambias de teléfono, o porque te vas a reinstalar la aplicación más adelante.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="qa-content">
+                            <div class="question">¿Puedo tener más de una isla registrada?</div>
+                            <div class="answer">
+                                <p>
+                                    Lamentablemente no, actualmente la app solo permite tener 1 isla y el
+                                    registro de un único insulano/a dentro de la aplicación (esto es por
+                                    dispositivo, por lo que si la otra persona se descarga la app en su
+                                    teléfono no tendrá problemas para llevar su progreso dentro de iNook).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="qa-content">
+                            <div class="question">¿Está incorporado el bot de CatalogScanner?</div>
+                            <div class="answer">
+                                <p>
+                                    Por supuesto, desde el lanzamiento se ha querido facilitar el registro
+                                    del catálogo, es por eso que desde la versión 1.1.0 en Android y
+                                    desde la versión 2.0.0 en iOS. La característica de escanear el catálogo
+                                    con el bot de Twitter CatalogScanner está disponible para su uso, y
+                                    desde la propia aplicación te vendrán las instrucciones para usarlo de
+                                    forma fácil. Para más información: <a target="_blank"
+                                        href="https://nook.lol/">visitar sitio web de CatalogScanner</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="qa-content">
+                            <div class="question">¿En qué idiomas está traducida la app?</div>
+                            <div class="answer">
+                                <p>
+                                    Actualmente con traducción al 100% están el español, inglés, euskera, italiano,
+                                    alemán, francés,
+                                    luego también están disponibles otros idiomas de forma parcial como puede ç
+                                    ser el Catalán, el Italiano, el Francés y el Coreano, en caso de querer
+                                    la aplicación en tu idioma puedes ayudar con la traducción de los textos de
+                                    la aplicación desde <a target="_blank"
+                                        href="https://crowdin.com/project/inook-app"></a>Crowdin iNook Project</a> para
+                                    traducir la app a tu idioma,
+                                    en caso de que los datos del juego (Animal Crossing New Horizons) no estén
+                                    disponibles en tu idioma estarán por defecto en inglés
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="qa-content">
+                            <div class="question">¿La app se vincula con los datos de mi isla de Animal Crossing de
+                                Nintendo Switch?</div>
+                            <div class="answer">
+                                <p>
+                                    Lamentablemente no, las aplicaciones de terceros como esta no pueden acceder
+                                    directamente a los datos de juego que tengas en Nintendo Switch, unicamente
+                                    las aplicaciones oficiales de Nintendo podrán acceder o vincularse con tu
+                                    cuenta de Nintendo Switch y mostrar los datos de juego que tengas
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="qa-content">
+                            <div class="question">Elementos destacados de iNook+ con *</div>
+                            <div class="answer">
+                                <p>
+                                    Esto es debido y marcado puesto que en la versión de iOS aún están en desarrollo
+                                    esas características, y llegarán en próximas actualizaciones de la aplicación
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="try-onir">
+                <div class="container">
+                    <div class="try-vectors">
+                        <img class="vector-1" src="../assets/img/portfolio/inook/circle-dark-green.png" alt="graphic-img">
+                        <img class="vector-2" src="../assets/img/portfolio/inook/semi-circle-dark-green.png" alt="graphic-img">
+                        <img class="vector-3" src="../assets/img/portfolio/inook/try-vector-3.png" alt="graphic-img">
+                        <img class="vector-4" src="../assets/img/portfolio/inook/try-vector-4.png" alt="graphic-img">
+
+                    </div>
+                    <div class="try-content">
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12">
+                                <h3 class="section-title text-dark">
+                                    Prueba tu Nookófono<br>
+                                    de forma gratuita
+                                </h3>
+                                <p class="section-subtitle text-dark opacity-70">
+                                    Descarga la última versión desde las tiendas<br>
+                                    de aplicaciones y no te olvides de dejar una
+                                    reseña
+                                </p>
+                                <div class="app-download">
+                                    <div class="ios-download ">
+                                        <a class="btn-container" href="https://apps.apple.com/es/app/inook/id1610550043"
+                                            target="_blank">
+                                            <img src="../assets/img/portfolio/inook/app-store.png" alt="">
+                                            <span>App Store</span></a>
+                                    </div>
+                                    <div class="android-download">
+                                        <a class="btn-container"
+                                            href="https://play.google.com/store/apps/details?id=com.jeluchu.inook"
+                                            target="_blank">
+                                            <img src="../assets/img/portfolio/inook/play-store.png" alt="">
+                                            <span>Play Store</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <div class="try-onir-img">
+                                    <img src="../assets/img/portfolio/inook/try-inook.png" alt="try-onir">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe-input">
+                <h3 class="section-title">¿Problemas o sugerencias?</h3>
+                <p class="section-subtitle">
+                    Suspendisse tincidunt sapien feliuentum
+                </p>
+                <div class="bottom-vector">
+                    <img src="../assets/img/portfolio/inook/quarter-circle-green.png" alt="bottom-vector">
+                </div>
+                <div class="container">
+                    <div class="input-container">
+                        <a href="../contact.html"><button>¡Contacta conmigo!</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="pb-50">
+                <div class="tp-footer__pl-pr p-relative">
+                    <div class="footer-black-bg tp-gsap-bg"></div>
+                    <div class="tp-footer__area pt-50">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-7 pb-30 wow tpfadeUp" data-wow-duration=".9s"
+                                    data-wow-delay=".5s">
+                                    <div class="tp-footer__widget footer-col-1">
+                                        <a href="index.html" class="tp-footer__widget-logo mb-10">
+                                            <img src="../assets/img/logo/logo-black.png" alt="">
+                                        </a>
+                                        <div class="tp-footer__text">
+                                            <p>
+                                                Somos bombillas andantes que no deberían
+                                                ir por la vida apagadas, es por eso que
+                                                hay que impulsar las ideas creativas
+                                            </p>
+                                        </div>
+                                        <div class="tp-copyright__text">
+                                            <span>©
+                                                <script>document.write(new Date().getFullYear())</script> <a
+                                                    href="#">Jéluchu</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-5 pb-30 wow tpfadeUp" data-wow-duration=".9s"
+                                    data-wow-delay=".7s">
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-6 pb-30 wow tpfadeUp" data-wow-duration=".9s"
+                                    data-wow-delay=".9s">
+                                    <div class="tp-footer__widget footer-col-2">
+                                        <h4 class="tp-footer__widget-title">Navegación</h4>
+                                        <div class="tp-footer__content">
+                                            <ul>
+                                                <li><a href="../index.html">Inicio</a></li>
+                                                <li><a href="../about.html">Sobre mí</a></li>
+                                                <li><a href="../portfolio.html">Portfolio</a></li>
+                                                <li><a href="https://drive.google.com/file/d/1x50DzDhjP4Q5wYewEhUydUZoTQ07mFhT/view?usp=share_link">Visualiza CV</a></li>
+                                                <li><a href="../contact.html">Contacta</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-6 pb-30 wow tpfadeUp" data-wow-duration=".9s"
+                                    data-wow-delay="1s">
+                                    <div class="tp-footer__widget footer-col-3">
+                                        <h4 class="tp-footer__widget-title">Links de interés</h4>
+                                        <div class="tp-footer__content">
+                                            <ul>
+                                                <li><a href="#">Aruppi</a></li>
+                                                <li><a href="#">A la vuelta de la esquina</a></li>
+                                                <li><a href="#">iNook</a></li>
+                                                <li><a href="#">La Arroba</a></li>
+                                                <li><a href="#">La Elipa</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../assets/js/projects/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/projects/owl.carousel.min.js"></script>
+    <script src="../assets/js/projects/main.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/waypoints.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/magnific-popup.js"></script>
+    <script src="../assets/js/counterup.js"></script>
+    <script src="../assets/js/wow.js"></script>
+    <script src="../assets/js/nice-select.js"></script>
+    <script src="../assets/js/swiper-bundle.js"></script>
+    <script src="../assets/js/meanmenu.js"></script>
+    <script src="../assets/js/tilt.jquery.js"></script>
+    <script src="../assets/js/isotope-pkgd.js"></script>
+    <script src="../assets/js/imagesloaded-pkgd.js"></script>
+    <script src="../assets/js/ajax-form.js"></script>
+    <script src="../assets/js/gsap.min.js"></script>
+    <script src="../assets/js/ScrollTrigger.min.js"></script>
+    <script src="../assets/js/ScrollSmoother.min.js"></script>
+    <script src="../assets/js/split-text.min.js"></script>
+    <script src="../assets/js/parallax-scroll.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+        var encabezado = document.getElementById('logo');
+        var encabezadoImg = document.querySelector('#logo a img');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset >= encabezado.offsetTop) {
+                encabezadoImg.src = "../assets/img/logo/logo-green.png";
+            } else {
+                encabezadoImg.src = "../assets/img/logo/logo-black.png";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
