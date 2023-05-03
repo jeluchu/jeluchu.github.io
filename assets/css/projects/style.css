@@ -124,9 +124,13 @@ ul {
 	margin-bottom: 18px;
 }
 
+.onir-plans .section-subtitle {
+	color: #C6DFB1;
+}
+
 .section-subtitle {
 	font-size: 1em;
-	color: #FEF8E4;
+	color: #5e7258;
 	text-align: center;
 	line-height: 28px;
 	opacity: 0.7;
@@ -135,7 +139,7 @@ ul {
 .title-top {
 	font-size: 0.75em;
 	font-weight: 700;
-	color: rgba(31, 31, 57, 0.5);
+	color: #72896A;
 	letter-spacing: 2px;
 }
 
@@ -198,7 +202,7 @@ Common :: Ends
 	font-weight: 900;
 	text-align: center;
 	padding-top: 120px;
-	color: #1F1F39;
+	color: #333333;
 }
 
 .banner-section p {
@@ -534,6 +538,7 @@ How it works Section / .how-it-works :: Ends
 
 .features .section-subtitle {
 	margin-top: 17px;
+	color: #C6DFB1;
 }
 
 .features .feature-content {
@@ -548,6 +553,15 @@ How it works Section / .how-it-works :: Ends
 .features .title-top {
 	margin-top: 50px;
 }
+
+.onir-stories .section-title {
+	color: #333333;
+}
+
+.feature-info .section-subtitle {
+	color: #C6DFB1;
+}
+
 
 .features .feature-content .section-title {
 	text-align: left;
@@ -927,7 +941,7 @@ Testimonial Section / .testimonial :: Ends
 .onir-plans .plan-card .popularity {
 	font-size: 10px;
 	font-weight: 700;
-	color: #1F1F39;
+	color: #5e7258;
 	padding: 6px 16px;
 	background-color: #C9DFB2;
 	border-radius: 15px;
@@ -974,6 +988,7 @@ Testimonial Section / .testimonial :: Ends
 	font-weight: 700;
 	text-align: center;
 	line-height: 35px;
+	color: #333333;
 }
 
 .onir-plans .plan-card .plan-amount span {
@@ -985,7 +1000,7 @@ Testimonial Section / .testimonial :: Ends
 
 .onir-plans .plan-card.active .plan-amount span,
 .onir-plans .plan-card:hover .plan-amount span {
-	color: rgba(255, 255, 255, 0.5)
+	color: #C6DFB1;
 }
 
 .onir-plans .plan-card button {
@@ -1115,7 +1130,7 @@ Onir Plans Section / .onir-plans :: Ends
 */
 .onir-stories {
 	padding-top: 250px;
-	background-color: rgba(255, 240, 233, 0.5);
+	background-color: #C9DFB2;
 	position: relative;
 }
 
@@ -1176,7 +1191,7 @@ Onir Plans Section / .onir-plans :: Ends
 }
 
 .onir-stories .stories-card .story-card .story-content a {
-	color: #0E7DFF;
+	color: #333333;
 	font-size: 0.7em;
 	font-weight: 700;
 	text-decoration: none;
@@ -1533,7 +1548,6 @@ Homepage 2 / .homepage-2 :: Ends
 }
 
 .hp-3 .banner-section .watch-now .btn-container {
-	display: ;
 	justify-content: center;
 	align-items: center;
 	gap: 15px;
