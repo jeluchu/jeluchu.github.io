@@ -1143,7 +1143,7 @@ input[type=color] {
   position: absolute;
   width: 0px;
   height: 0px;
-  background-color: var(--tp-common-black);
+  background-color: var(--tp-dark);
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -1154,6 +1154,8 @@ input[type=color] {
 .tp-btn-hover:hover b {
   width: 400px;
   height: 400px;
+  background-color: var(--tp-dark);
+
   display: inline-block;
 }
 .tp-btn-hover.alt-color b {
@@ -1231,7 +1233,7 @@ input[type=color] {
 
 .tp-btn-inner {
   display: inline-block;
-  background: var(--tp-common-blue-4);
+  background: var(--dark-green);
   color: var(--tp-common-white);
   height: 50px;
   line-height: 50px;
@@ -2662,7 +2664,7 @@ input[type=color] {
   font-size: 17px;
   line-height: 26px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--tp-dark);
 }
 @media (max-width: 767px) {
   .breadcrumb__text p br {
@@ -2686,7 +2688,7 @@ input[type=color] {
   font-size: 70px;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: var(--tp-dark);
   padding-bottom: 12px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -7150,7 +7152,7 @@ input[type=color] {
   left: 0;
   height: 60px;
   width: 1.5px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--dark-green);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-platform-text p::after {
@@ -7222,23 +7224,23 @@ input[type=color] {
 }
 
 .tp-platform-inner .col-custom {
-  background: #F5F3F8;
-  box-shadow: 0px -3px 0px #6B14FA;
+  background: var(--cosmiclatte);
+  box-shadow: 0px -3px 0px  var(--lightgreen);
 }
 .tp-platform-inner .tp-panel-title {
-  color: var(--tp-common-black);
+  color: var(--tp-dark);
 }
 .tp-platform-inner .tp-panel-content span {
-  color: var(--tp-common-black);
+  color: var(--tp-dark);
 }
 .tp-platform-inner .tp-panel-content-2 span {
-  color: var(--tp-common-black);
+  color: var(--tp-dark);
 }
 .tp-platform-inner .tp-panel-title-2 {
-  color: var(--tp-common-black);
+  color: var(--tp-dark);
 }
 .tp-platform-inner .tp-panel-content-2 p {
-  color: var(--tp-common-black);
+  color: var(--tp-dark);
 }
 
 .tp-panel-title {
@@ -7917,7 +7919,7 @@ input[type=color] {
 }
 
 .job-post-box {
-  background: #F7F9FC;
+  background: var(--cosmiclatte);
   padding: 23px 60px;
   border-radius: 12px;
   transform: scaleX(0.9);
@@ -7935,7 +7937,7 @@ input[type=color] {
   }
 }
 .job-post-box:hover {
-  background-color: var(--tp-common-white);
+  background-color: var(--lightgreen);
   box-shadow: 0px 20px 50px rgba(8, 8, 41, 0.08);
   border-radius: 12px;
   transform: scaleX(1);
@@ -7953,7 +7955,7 @@ input[type=color] {
   font-weight: 600;
   font-size: 22px;
   line-height: 20px;
-  color: #080829;
+  color: var(--tp-dark);
   display: inline-block;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -15176,15 +15178,10 @@ input[type=color] {
 
 .parallax-main {
   overflow: hidden;
-  border-radius: 20px;
-  width: 100%;
-  height: 620px;
-  background-color: red;
 }
 
 .parallax-img {
-  min-height: 1000px;
-  margin-top: -300px;
+  margin-top: -50px;
 }
 
 .career-details-profile-box {
@@ -15493,7 +15490,7 @@ input[type=color] {
   color: var(--tp-common-black);
 }
 .tp-platform-inner .tp-platform-text p {
-  color: var(--tp-common-black);
+  color: var(--lightgreen);
 }
 
 /*----------------------------------------*/
