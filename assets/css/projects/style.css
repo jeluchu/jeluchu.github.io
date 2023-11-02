@@ -124,6 +124,22 @@ ul {
 	margin-bottom: 18px;
 }
 
+.section-title-dark-gold {
+	font-size: 2.5em;
+	font-weight: 700;
+	text-align: center;
+	color: #857443;
+	margin-bottom: 18px;
+}
+
+.section-title-dark-gold-s {
+	font-size: 2.5em;
+	font-weight: 700;
+	text-align: start;
+	color: #857443;
+	margin-bottom: 18px;
+}
+
 .onir-plans .section-subtitle {
 	color: #C6DFB1;
 }
@@ -136,10 +152,41 @@ ul {
 	opacity: 0.7;
 }
 
+.section-subtitle-light-gold {
+	font-size: 1em;
+	color: #F4EDC7;
+	text-align: center;
+	line-height: 28px;
+	opacity: 0.7;
+}
+
+.section-subtitle-dark-gold {
+	font-size: 1em;
+	color: #857543aa;
+	text-align: center;
+	line-height: 28px;
+	opacity: 0.7;
+}
+
+.section-subtitle-dark-gold-s {
+	font-size: 1em;
+	color: #857543aa;
+	text-align: start;
+	line-height: 28px;
+	opacity: 0.7;
+}
+
 .title-top {
 	font-size: 0.75em;
 	font-weight: 700;
 	color: #72896A;
+	letter-spacing: 2px;
+}
+
+.title-top-darkness-gold {
+	font-size: 0.75em;
+	font-weight: 700;
+	color: #B39D5A;
 	letter-spacing: 2px;
 }
 
@@ -150,7 +197,7 @@ ul {
 }
 
 .app-download div {
-	border: 2px solid #1F1F39;
+	border: 2px solid #333333;
 	height: 90px;
 	width: 280px;
 	display: inline-flex;
@@ -408,8 +455,6 @@ Brand Section / .brand-partner :: Ends
 	border-radius: 25px;
 	padding-top: 65px;
 	position: relative;
-
-
 }
 
 .how-it-works .work-vector img.vector-1 {
@@ -506,6 +551,7 @@ Brand Section / .brand-partner :: Ends
 .how-it-works .work-card.setup .steps-para,
 .how-it-works .work-card.demo .steps-para {
 	padding-right: 10px;
+	text-align: start;
 }
 
 .how-it-works .work-card.rg .steps-para {
@@ -1121,6 +1167,231 @@ Testimonial Section / .testimonial :: Ends
 .onir-plans .slider.round:before {
 	border-radius: 50%;
 }
+
+
+/*** Plans Gold ***/
+
+.onir-plans-gold {
+	margin-top: 200px;
+	background: linear-gradient(180deg, #333333 67%, #E6CA85 40%);
+	position: relative;
+}
+
+.onir-plans-gold .plan-vectors img.vector-1 {
+	position: absolute;
+	top: 23%;
+	left: -10%;
+}
+
+.onir-plans-gold .plan-vectors img.vector-2 {
+	position: absolute;
+	top: 0;
+	right: 0
+}
+
+.onir-plans-gold .section-subtitle {
+	margin-bottom: 100px;
+}
+
+.onir-plans-gold .plan-cards {
+	display: flex;
+	gap: 60px;
+	;
+}
+
+.onir-plans-gold .plan-card {
+	background-color: #FFF0E9;
+	padding: 60px 30px;
+	border-radius: 20px;
+	width: 340px;
+	cursor: pointer;
+	transition: 0.3s all
+}
+
+.onir-plans-gold .plan-card .popularity {
+	font-size: 10px;
+	font-weight: 700;
+	color: #B39D5A;
+	padding: 6px 16px;
+	background-color: #F4EDC7;
+	border-radius: 15px;
+	float: right;
+	margin-top: -45px;
+	min-width: 67px;
+	line-height: 12px;
+
+}
+
+.onir-plans-gold .plan-card:hover,
+.onir-plans-gold .plan-card.active {
+	background-color: #EEDCA4;
+	color: #857443
+}
+
+.onir-plans-gold .plan-card .plan-name {
+	text-align: center;
+	font-size: 1em;
+	font-weight: 700;
+	color: #1F1F39;
+}
+
+.onir-plans-gold .plan-card:hover .plan-name,
+.onir-plans-gold .plan-card.active .plan-name {
+	color: #857443
+}
+
+.onir-plans-gold .plan-card span {
+	font-size: 0.75em;
+	color: rgba(31, 31, 57, 0.5);
+	text-align: center;
+	display: block;
+	margin-bottom: 60px;
+}
+
+.onir-plans-gold .plan-card:hover span,
+.onir-plans-gold .plan-card.active span {
+	color: #857443
+}
+
+.onir-plans-gold .plan-card .plan-amount h3 {
+	font-size: 2.5em;
+	font-weight: 700;
+	text-align: center;
+	line-height: 35px;
+	color: #333333;
+}
+
+.onir-plans-gold .plan-card .plan-amount span {
+	padding-left: 50px;
+	font-size: 15px;
+	color: rgba(31, 31, 57, 0.5);
+
+}
+
+.onir-plans-gold .plan-card.active .plan-amount span,
+.onir-plans-gold .plan-card:hover .plan-amount span {
+	color: #645E51;
+}
+
+.onir-plans-gold .plan-card button {
+	text-align: center;
+	width: 100%;
+	background-color: #857443;
+	padding: 0 20px;
+	line-height: 73px;
+	border: none;
+	border-radius: 20px;
+	font-size: 20px;
+	color: #1F1F39;
+	font-weight: 700;
+	margin-bottom: 60px;
+}
+
+.onir-plans-gold .plan-card:hover button,
+.onir-plans-gold .plan-card.active button {
+	background-color: #857443;
+
+}
+
+.onir-plans-gold .plan-card ul {
+	list-style: none;
+
+
+}
+
+.onir-plans-gold .plan-card ul li {
+	font-size: 0.80em;
+	line-height: 40px;
+	padding-left: 10px;
+}
+
+.fa-check-circle:before,
+.fa-circle-check:before {
+	content: "\f058";
+	color: #0E7DFF;
+	font-size: 10px;
+	padding-right: 13px;
+}
+
+.onir-plans-gold .plan-card:hover .fa-circle-check:before,
+.onir-plans-gold .plan-card.active .fa-circle-check:before {
+	color: #857443
+}
+
+.onir-plans-gold .plan-tenure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 70px;
+	gap: 10px;
+}
+
+.onir-plans-gold .plan-tenure>span {
+	font-size: 0.750em;
+	font-weight: 700;
+	color: #1F1F3980;
+}
+
+.onir-plans-gold .plan-tenure>span.active {
+	color: #1F1F39;
+}
+
+.onir-plans-gold .switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.onir-plans-gold .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.onir-plans-gold .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(31, 31, 57, 0.07);
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.onir-plans-gold .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: #0E7DFF;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.onir-plans-gold input:checked+.slider {
+	background-color: rgba(31, 31, 57, 0.07);
+}
+
+.onir-plans input:checked+.slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+
+.onir-plans-gold .slider.round {
+	border-radius: 34px;
+}
+
+.onir-plans-gold .slider.round:before {
+	border-radius: 50%;
+}
+
 /*------------------------------------------------------------------
 Onir Plans Section / .onir-plans :: Ends
 */
@@ -1202,6 +1473,82 @@ Onir Plans Section / .onir-plans :: Ends
 	color: #005fcf;
 	text-decoration: underline;
 }
+
+.onir-stories-gold {
+	padding-top: 250px;
+	background-color: #E6CA85;
+	position: relative;
+}
+
+.onir-stories-gold .story-vector img {
+	position: absolute;
+	top: 30%;
+	left: -5%;
+}
+
+.onir-stories-gold .stories-card {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 30px;
+	margin-top: 100px;
+}
+
+.onir-stories-gold .stories-card .story-card {
+	position: relative;
+
+}
+
+.onir-stories-gold .stories-card .story-card img {
+	border-radius: 20px;
+}
+
+.onir-stories-gold .stories-card .story-card .story-time {
+	position: absolute;
+	top: 20px;
+	font-size: 14px;
+	right: 25px;
+	color: rgba(31, 31, 57, 0.5)
+}
+
+.onir-stories-gold .stories-card .story-card .story-content {
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 20px 40px;
+	width: 295px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 6%;
+}
+
+.onir-stories-gold .stories-card .story-card .story-content h4 {
+	font-size: 1em;
+	color: #1F1F39;
+	font-weight: 700;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.onir-stories-gold .stories-card .story-card .story-content p {
+	font-size: 0.7em;
+	color: rgba(31, 31, 57, 0.5);
+}
+
+.onir-stories-gold .stories-card .story-card .story-content a {
+	color: #333333;
+	font-size: 0.7em;
+	font-weight: 700;
+	text-decoration: none;
+	transition: 0.3s all;
+}
+
+.onir-stories-gold .stories-card .story-card .story-content a:hover {
+	color: #005fcf;
+	text-decoration: underline;
+}
+
+
 /*------------------------------------------------------------------
 Onir Stories Section / .onir-stories :: Ends
 */
@@ -1261,6 +1608,57 @@ Onir Stories Section / .onir-stories :: Ends
 }
 
 .faq .qa-content:last-child {
+	border-bottom: none;
+}
+
+.faq-gold {
+	padding-top: 150px;
+	background-color: #E6CA85;
+
+}
+
+.faq-gold .section-title {
+	margin-bottom: 100px;
+}
+
+.faq-gold .qa-content {
+	display: flex;
+	justify-content: space-between;
+	gap: 170px;
+	padding: 30px 0 25px;
+	border-bottom: 1px solid rgba(31, 31, 57, 0.1);
+}
+
+.faq-gold .qa-content .question {
+	width: 375px;
+	font-size: 1em;
+	color: #1F1F39;
+	font-weight: 700;
+
+}
+
+.faq-gold .qa-content .answer {
+	max-width: 365px;
+	font-size: 0.7em;
+	color: rgba(31, 31, 57, 0.5);
+	line-height: 18px;
+	position: relative;
+	padding-right: 40px;
+
+}
+
+.faq-gold .qa-content .answer::before {
+	content: '';
+	background: no-repeat url(../images/ans-vector.png);
+	position: absolute;
+	top: 4px;
+	left: -70px;
+	width: 37px;
+	height: 20px;
+	display: block;
+}
+
+.faq-gold .qa-content:last-child {
 	border-bottom: none;
 }
 /*------------------------------------------------------------------
@@ -1326,6 +1724,67 @@ FAQs Section / .faq :: Ends
 	top: -17%;
 	right: 12%
 }
+
+.try-onir-gold {
+	padding-top: 300px;
+	position: relative;
+	background: linear-gradient(180deg, #E6CA85 77%, #333333 20%);
+}
+
+.try-onir-gold .try-vectors img.vector-1 {
+	position: absolute;
+	top: -30%;
+	right: -4%;
+}
+
+.try-onir-gold .try-vectors img.vector-2 {
+	position: absolute;
+	top: -3%;
+	left: 9%;
+}
+
+.try-onir-gold .try-vectors img.vector-3 {
+	position: absolute;
+	top: 40%;
+	left: -17%;
+}
+
+.try-onir-gold .try-vectors img.vector-4 {
+	position: absolute;
+	top: 60%;
+	right: -3%;
+}
+
+.try-onir-gold .try-content {
+	background-color: #EEDCA4;
+	padding: 90px 90px 100px 100px;
+	border-radius: 25px;
+}
+
+.try-onir-gold .try-content .section-title {
+	text-align: left;
+	color: #857443;
+}
+
+.try-onir-gold .try-content .section-subtitle {
+	margin-top: 15px;
+	margin-bottom: 60px;
+	text-align: left;
+	color: #857543a3;
+}
+
+.try-onir-gold .try-content .app-download {
+	justify-content: space-between;
+	width: 94%;
+}
+
+.try-onir-gold .try-onir-img {
+	position: absolute;
+	top: -17%;
+	right: 12%
+}
+
+
 /*------------------------------------------------------------------
 Try Onir Section / .try-onir :: Ends
 */
@@ -1385,6 +1844,41 @@ Try Onir Section / .try-onir :: Ends
 .subscribe-input .input-container button:hover {
 	transform: scale(1.05);
 }
+
+/**** Gold Button ***/
+
+.subscribe-input .input-container-gold {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding-bottom: 150px;
+}
+
+.subscribe-input .input-container-gold input {
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	width: 430px;
+	background-color: transparent;
+	padding: 25px 30px;
+	color: rgba(255, 255, 255, 0.5);
+
+}
+
+.subscribe-input .input-container-gold button {
+	width: 300px;
+	background-color: #EEDCA4;
+	border-radius: 20px;
+	border: none;
+	padding: 25px 75px;
+	color: #1F1F39;
+	font-weight: 700;
+	transition: 0.3s all;
+	white-space: nowrap;
+   	text-align: center;
+}
+
+.subscribe-input .input-container-gold button:hover {
+	transform: scale(1.05);
+}
+
 /*------------------------------------------------------------------
 Subscribe Section / .subscribe :: Ends
 */
@@ -1394,7 +1888,7 @@ Subscribe Section / .subscribe :: Ends
 */
 .homepage-2 .banner-section {
 	padding-top: 200px;
-	background: linear-gradient(180deg, #fff0e9 90%, #fff 10%);
+	background: linear-gradient(180deg, #EEDCA4 90%, #333333 10%);
 }
 
 .homepage-2 .banner-section h1 {
@@ -1461,16 +1955,15 @@ Subscribe Section / .subscribe :: Ends
 
 /*how-it-works*/
 .homepage-2 .how-it-works .working-content {
-	background-color: #fff;
+	background-color: #EEDCA4;
 }
 
 .homepage-2 .how-it-works .working-content .work-center {
-	background-color: #FFF0E9;
-
+	background-color: #F4EDC7;
 }
 
 .homepage-2 .features {
-	background-color: #FFF0E980;
+	background-color: #EEDCA4;
 	padding-top: 150px;
 	padding-bottom: 350px;
 }
