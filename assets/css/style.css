@@ -2154,6 +2154,28 @@ input[type=color] {
   bottom: 25px;
 }
 
+.scroll-top-gold {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: -10%;
+  right: 25px;
+  font-size: 16px;
+  border-radius: 18px;
+  z-index: 9;
+  color: var(--cosmiclatte);
+  text-align: center;
+  cursor: pointer;
+  background: #B39D5A;
+  transition: 1s ease;
+  border: none;
+}
+
+.scroll-top-gold.open {
+  bottom: 25px;
+}
+
 /*---------------------------------------*/
 /*Background color
 /*-----------------------------------------*/
