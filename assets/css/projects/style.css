@@ -1980,7 +1980,7 @@ Homepage 2 / .homepage-2 :: Ends
 17. Homepage 3 / .hp-3 :: Starts
 */
 .hp-3 .banner-section {
-	background-color: #fff;
+	background-color: #FF9D96;
 	padding-top: 250px;
 	text-align: center;
 	position: relative;
@@ -2030,7 +2030,7 @@ Homepage 2 / .homepage-2 :: Ends
 
 .hp-3 .banner-section::before {
 	content: '';
-	background-color: #FFF0E9;
+	background-color: #FFDFDD;
 	position: absolute;
 	width: 1110px;
 	height: 1110px;
