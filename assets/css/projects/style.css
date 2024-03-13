@@ -152,6 +152,22 @@ ul {
 	opacity: 0.7;
 }
 
+.section-subtitle-light {
+	font-size: 1em;
+	color: #fff;
+	text-align: center;
+	line-height: 28px;
+	opacity: 0.7;
+}
+
+.section-subtitle-red {
+	font-size: 1em;
+	color: #feb0aa;
+	text-align: left;
+	line-height: 28px;
+	opacity: 0.7;
+}
+
 .section-subtitle-light-gold {
 	font-size: 1em;
 	color: #F4EDC7;
@@ -180,6 +196,14 @@ ul {
 	font-size: 0.75em;
 	font-weight: 700;
 	color: #72896A;
+	letter-spacing: 2px;
+}
+
+.title-top-light {
+	font-size: 0.75em;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
 	letter-spacing: 2px;
 }
 
@@ -562,6 +586,7 @@ Brand Section / .brand-partner :: Ends
 
 .how-it-works .work-card .work-steps {
 	color: #333333;
+	margin-top: 20px;
 }
 
 .how-it-works .work-card.lf .steps-para {
@@ -618,6 +643,11 @@ How it works Section / .how-it-works :: Ends
 }
 
 .features .feature-content .feature-img {
+	display: flex;
+	justify-content: center;
+}
+
+.features .feature-content .feature-img-red {
 	display: flex;
 	justify-content: center;
 }
@@ -690,7 +720,7 @@ Features Section / .features :: Ends
 8. Why Onir Section / .why-onir :: Starts
 */
 .why-onir {
-	margin-top: 250px;
+	margin-top: 100px;
 }
 
 .why-onir .why-onir-content {
@@ -700,7 +730,7 @@ Features Section / .features :: Ends
 }
 
 .why-onir .title-top {
-	text-align: center;
+	text-align: center
 }
 
 .why-onir .why-cards {
@@ -777,6 +807,62 @@ Features Section / .features :: Ends
 	font-weight: 400;
 	line-height: 28px;
 }
+
+/* Red Why Section */
+
+.why-red {
+	margin-top: 150px;
+	margin-bottom: 250px;
+}
+
+.why-red .why-onir-content {
+	background-color: #FF9D96;
+	border-radius: 25px;
+	padding: 90px 130px;
+}
+
+.why-red .title-top {
+	text-align: center;
+}
+
+.why-red .why-cards {
+	margin: 80px 0;
+}
+
+.why-red .why-cards .why-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px
+}
+
+.why-red .why-cards .why-img {
+	width: 70px;
+	height: 70px;
+	background-color: #FFDFDD;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.why-red .why-cards h6 {
+	font-size: 1em;
+	font-weight: 700;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+.why-red .why-cards p {
+	font-size: 0.7em;
+	font-weight: 400;
+	color: rgba(31, 31, 57, 0.5);
+	line-height: 18px;
+	text-align: center;
+	padding: 0 55px;
+}
+
 /*------------------------------------------------------------------
 Why Onir Section / .why-onir :: Ends
 */
@@ -1661,6 +1747,58 @@ Onir Stories Section / .onir-stories :: Ends
 .faq-gold .qa-content:last-child {
 	border-bottom: none;
 }
+
+/* ----- Red */
+
+.faq-red {
+	padding-top: 150px;
+	background-color: #FF9D96;
+
+}
+
+.faq-red .section-title {
+	margin-bottom: 100px;
+}
+
+.faq-red .qa-content {
+	display: flex;
+	justify-content: space-between;
+	gap: 170px;
+	padding: 30px 0 25px;
+	border-bottom: 1px solid rgba(31, 31, 57, 0.1);
+}
+
+.faq-red .qa-content .question {
+	width: 375px;
+	font-size: 1em;
+	color: #8c4844;
+	font-weight: 700;
+
+}
+
+.faq-red .qa-content .answer {
+	max-width: 365px;
+	font-size: 0.7em;
+	line-height: 18px;
+	position: relative;
+	padding-right: 40px;
+}
+
+.faq-red .qa-content .answer::before {
+	content: '';
+	background: no-repeat url(../images/ans-vector.png);
+	position: absolute;
+	top: 4px;
+	left: -70px;
+	width: 37px;
+	height: 20px;
+	display: block;
+}
+
+.faq-red .qa-content:last-child {
+	border-bottom: none;
+}
+
 /*------------------------------------------------------------------
 FAQs Section / .faq :: Ends
 */
@@ -1718,6 +1856,29 @@ FAQs Section / .faq :: Ends
 	justify-content: space-between;
 	width: 94%;
 }
+
+.try-onir .try-content-red {
+	background-color: #FF9D96;
+	padding: 90px 90px 100px 100px;
+	border-radius: 25px;
+}
+
+.try-onir .try-content-red .section-title {
+	text-align: left;
+}
+
+.try-onir .try-content-red .section-subtitle {
+	margin-top: 15px;
+	margin-bottom: 60px;
+	text-align: left;
+	color: #333333;
+}
+
+.try-onir .try-content-red .app-download {
+	justify-content: space-between;
+	width: 94%;
+}
+
 
 .try-onir .try-onir-img {
 	position: absolute;
@@ -1879,6 +2040,40 @@ Try Onir Section / .try-onir :: Ends
 	transform: scale(1.05);
 }
 
+/**** Red Button ***/
+
+.subscribe-input .input-container-red {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding-bottom: 150px;
+}
+
+.subscribe-input .input-container-red input {
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	width: 430px;
+	background-color: transparent;
+	padding: 25px 30px;
+	color: rgba(255, 255, 255, 0.5);
+
+}
+
+.subscribe-input .input-container-red button {
+	width: 300px;
+	background-color: #FF9D96;
+	border-radius: 20px;
+	border: none;
+	padding: 25px 75px;
+	color: #1F1F39;
+	font-weight: 700;
+	transition: 0.3s all;
+	white-space: nowrap;
+   	text-align: center;
+}
+
+.subscribe-input .input-container-red button:hover {
+	transform: scale(1.05);
+}
+
 /*------------------------------------------------------------------
 Subscribe Section / .subscribe :: Ends
 */
@@ -1979,6 +2174,7 @@ Homepage 2 / .homepage-2 :: Ends
 /*------------------------------------------------------------------
 17. Homepage 3 / .hp-3 :: Starts
 */
+
 .hp-3 .banner-section {
 	background-color: #FF9D96;
 	padding-top: 250px;
@@ -2058,21 +2254,30 @@ Homepage 2 / .homepage-2 :: Ends
 	border-radius: 45px;
 	position: relative;
 	z-index: 2;
+	margin-top: 80px;
+
 }
 
+.hp-3 .how-it-works {
+	background-color: #FF9D96;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
 
 .hp-3 .how-it-works .working-content {
 	margin-top: 100px;
 	padding-top: 0px;
 	display: flex;
 	gap: 30px;
-	background-color: #fff;
+	background-color: #FF9D96;
 	justify-content: center;
 	text-align: center;
 }
 
 .hp-3 .how-it-works .working-content .work-card {
-	border: 2px solid #FFF0E9;
+	border: 2px solid #FFDFDD;
 	border-radius: 20px;
 	padding: 50px 25px;
 	display: flex;
@@ -2084,7 +2289,6 @@ Homepage 2 / .homepage-2 :: Ends
 .hp-3 .how-it-works .working-content .center.active .work-card,
 .hp-3 .how-it-works .working-content .work-card:hover {
 	box-shadow: 0px 21px 24px 0px rgba(255, 240, 233, 0.5);
-
 }
 
 .hp-3 .how-it-works .working-content .work-card .work-steps {
@@ -2107,10 +2311,25 @@ Homepage 2 / .homepage-2 :: Ends
 	z-index: -1;
 }
 
+.hp-3 .features .feature-content .feature-img-red {
+	position: relative;
+}
+
+.hp-3 .features .feature-content .feature-img-red::before {
+	content: '';
+	width: 430px;
+	height: 430px;
+	background-color: #FF9D96;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: -1;
+}
+
 .hp-3 .mobile-ss {
 	position: relative;
-	height: 1200px;
-	/* margin-bottom: 400px; */
+	height: 1300px;
 }
 
 .hp-3 .mobile-ss .container-fluid {
@@ -2119,7 +2338,7 @@ Homepage 2 / .homepage-2 :: Ends
 
 .hp-3 .mobile-ss::before {
 	content: '';
-	background-color: #FFF0E9;
+	background-color: #FF9D96;
 	position: absolute;
 	width: 1110px;
 	height: 1110px;
@@ -2138,11 +2357,11 @@ Homepage 2 / .homepage-2 :: Ends
 }
 
 .hp-3 .faq {
-	background-color: #fff;
+	background-color: #FF9D96;
 }
 
 .hp-3 .try-onir {
-	background: linear-gradient(180deg, #fff 77%, #1F1F39 20%);
+	background: #333333;
 }
 /*------------------------------------------------------------------
 Homepage 3 :: Ends
