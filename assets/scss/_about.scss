@@ -1,0 +1,194 @@
+/* --------------- Services --------------- */
+
+.about-ca{
+
+    .main-box{
+        color: #fff;
+        height: 870px;
+        padding: 40px;
+        background-image: url(../imgs/about/bg.jpg);
+        background-size: cover;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+
+        .caption{
+
+            h1{
+                font-size: 128px;
+                line-height: 128px;
+                font-weight: 600;
+            }
+        }
+    
+        .text{
+            position: relative;
+            z-index: 3;
+            margin-top: 60px;
+    
+            h6{
+                font-size: 20px;
+            }
+        }
+
+        .states{
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            z-index: 3;
+    
+            span{
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .right-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .team{
+        position: relative;
+        border-radius: 20px;
+        background: #fff;
+        overflow: hidden;
+
+        .team-swiper{
+            padding: 50px 30px 30px;
+        }
+
+        .img{
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-image: linear-gradient(to bottom, #5B5B5B, #DDDDDD);
+            margin: auto;
+            margin-bottom: 15px;
+        }
+
+        .cont{
+
+            h6{
+                font-size: 22px;
+            }
+
+            span{
+                font-size: 14px;
+                margin-top: 5px;
+            }
+
+            .social-icon{
+                margin-top: 30px;
+
+                a{
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    border: 1px solid rgba(0,0,0,.2);
+                    border-radius: 50%;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .botom{
+            margin-top: 40px;
+        }
+
+        .title{
+            font-weight: 500;
+        }
+
+        .controls{
+            position: static;
+            display: flex;
+            align-items: center;
+
+            .swiper-button-next, .swiper-button-prev{
+                position: static;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-size: 12px;
+                color: #151515;
+                background: #D6D8E8;
+                border-radius: 50%;
+                margin: 0 2px;
+
+                &:hover{
+                    background: #151515;
+                    color: #fff;
+                }
+
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .join{
+        background: $main-color;
+        color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 100%;
+        padding: 30px 20px;
+        position: relative;
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../imgs/about/symbol.svg);
+            background-size: cover;
+            pointer-events: none;
+        }
+
+        .ontop{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .jon-link{
+
+            span{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.5;
+            }
+
+            .icon{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                background: #fff;
+    
+                img{
+                    width: 15px;
+                }
+            }
+        }
+
+        .cont{
+
+            span{
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
