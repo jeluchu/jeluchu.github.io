@@ -375,7 +375,8 @@
                                                                 <img src="assets/imgs/header/companies/plexus.svg"
                                                                     alt="">
                                                             </div>
-                                                            <span><b>Plexus</b><br>1 año 7 meses (Act.)</span>
+                                                            <span id="plexus"><b>Plexus</b></span>
+
                                                         </div>
                                                     </div>
                                                     <div class="swiper-slide">
@@ -409,7 +410,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </header>
 
@@ -425,9 +425,9 @@
                                     <div class="col-lg-6 md-mb15">
                                         <h2>Proyectos destacados</h2>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 center">
                                         <div class="text">
-                                            <p>
+                                            <p >
                                                 Conoce los proyectos más populares que realizo,<br>
                                                 desde aplicaciones móviles, podcast hasta community manager
                                             </p>
@@ -1180,6 +1180,12 @@
 
     <!-- plugins -->
     <script src="assets/common/js/lib/plugins.js"></script>
+    <script src="assets/js/counterTimeWork.js"></script> <!-- Vincula el archivo externo -->
+
+    <script>
+        showTimeWork(new Date(2023, 2, 7), 'plexus');
+       // mostrarTiempoTranscurrido(new Date(2023, 0, 1), 'tiempoTranscurrido2'); // Ejemplo: 1 de enero de 2023
+    </script>
 
     <!-- GSAP -->
     <script src="assets/common/js/gsap_lib/gsap.min.js"></script>

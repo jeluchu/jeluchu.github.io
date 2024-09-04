@@ -135,6 +135,10 @@
   width: calc(100% - 350px);
 }
 
+.center {
+  vertical-align: middle;
+}
+
 /* --------------- header --------------- */
 .header-ca .main-box {
   color: #fff;
