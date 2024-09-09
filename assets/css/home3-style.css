@@ -432,7 +432,7 @@
 }
 
 .process-ca .accordion-item.active button {
-  color: var(--main-color) !important;
+  color: #72896A !important;
 }
 
 .process-ca .accordion-item .accordion-header {
@@ -478,6 +478,14 @@
   padding: 100px 40px 60px;
   background: var(--main-color);
   color: #fff;
+  margin-top: -40px;
+  border-radius: 0 0 20px 20px;
+}
+
+.numbers-ca-dark-green {
+  padding: 100px 40px 60px;
+  background: var(--main-color);
+  color: #72896A;
   margin-top: -40px;
   border-radius: 0 0 20px 20px;
 }
@@ -861,12 +869,12 @@
 
 .contact-ca .contact-form button {
   background: var(--main-color);
-  color: #fff;
+  color: #72896A;
 }
 
 .contact-ca .contact-form button:hover {
-  background: #fff;
-  color: #151515;
+  background: #72896A;
+  color: var(--main-color);
 }
 
 body {
@@ -955,6 +963,20 @@ p {
 
 .sec-head p {
   color: #333333;
+  font-family: var(--font-medium);
+}
+
+.sec-head-dark {
+  text-wrap: pretty;
+}
+
+.sec-head-dark h2 {
+  color: #C9DFB2;
+  font-family: var(--font-heavy);
+}
+
+.sec-head-dark p {
+  color: #c9dfb2bb;
   font-family: var(--font-medium);
 }
 
