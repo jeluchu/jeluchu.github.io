@@ -37,39 +37,37 @@
         </svg>
     </div>
 
-    <!-- ==================== Start Navbar ==================== -->
-
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-
-            <!-- Logo -->
-            <a class="logo" href="#">
-                <img src="assets/imgs/Logo-light.svg" alt="logo">
+            <a class="logo" href="index.html">
+                <img src="assets/img/logo/logo.png" alt="logo">
             </a>
 
-            <!-- navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../inner_pages/about.html">Studio</a>
+                        <a class="nav-link" href="about.html">Sobre Jeluchu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../inner_pages/portfolio-cards.html">Works</a>
+                        <a class="nav-link" href="projects.html">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../inner_pages/blog-grid.html">News</a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contacta</a>
                     </li>
                 </ul>
             </div>
             <div class="topnav d-flex align-items-center">
-                <a href="../inner_pages/contact.html" class="butn butn-rounded">
+                <a href="https://drive.google.com/file/d/1x50DzDhjP4Q5wYewEhUydUZoTQ07mFhT/view?usp=share_link" target="_blank" class="butn butn-rounded">
                     <div class="d-flex align-items-center">
-                        <span>Start Project</span>
+                        <span>Ver el CV</span>
                         <span class="icon ml-10">
-                            <img src="../common/imgs/icons/arrow-top-right.svg" alt="">
+                            <img src="assets/common/imgs/icons/person-accounts.svg" alt="">
                         </span>
                     </div>
                 </a>
@@ -237,15 +235,13 @@
         </div>
     </div>
 
-    <!-- ==================== End Navbar ==================== -->
-
     <div id="smooth-wrapper">
         <div id="smooth-content">
             <main>
                 <header class="contact-hed section-padding pb-0">
                     <div class="container">
                         <div class="caption mb-80 text-center">
-                            <h1>Get In Touch</h1>
+                            <h1>¿Hablamos?</h1>
                         </div>
                     </div>
                     <div class="container-fluid">
@@ -266,8 +262,9 @@
                                         <h2 class="text-u">
                                             <span class="fw-200">Impulsando </span><br> la creatividad
                                         </h2>
-                                        <p class="mt-20 mb-20">If you would like to work with us or just want to get in
-                                            touch, we’d love to hear from you!</p>
+                                        <p class="mt-20 mb-20">
+                                            Si quieres conocer más de mí, recibir soporte de alguna de
+                                            mis aplicaciones, no dudes en contactarme</p>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="morinfo mt-30">
@@ -285,17 +282,16 @@
                                     </div>
                                     <ul class="rest social-text d-flex mt-60 fz-16">
                                         <li class="mr-30">
-                                            <a href="#0" class="hover-this"><span class="hover-anim">Facebook</span></a>
+                                            <a href="https://t.me/jchsupport" class="hover-this"><span class="hover-anim">Telegram</span></a>
                                         </li>
                                         <li class="mr-30">
-                                            <a href="#0" class="hover-this"><span class="hover-anim">Twitter</span></a>
+                                            <a href="https://x.com/jeluchu" class="hover-this"><span class="hover-anim">Twitter</span></a>
                                         </li>
                                         <li class="mr-30">
-                                            <a href="#0" class="hover-this"><span class="hover-anim">LinkedIn</span></a>
+                                            <a href="https://www.linkedin.com/in/jesusmariacalderon/" class="hover-this"><span class="hover-anim">LinkedIn</span></a>
                                         </li>
                                         <li>
-                                            <a href="#0" class="hover-this"><span
-                                                    class="hover-anim">Instagram</span></a>
+                                            <a href="https://www.instagram.com/jeluchu/" class="hover-this"><span class="hover-anim">Instagram</span></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -303,46 +299,58 @@
                             <div class="col-lg-6 offset-lg-1 valign">
                                 <div class="full-width">
                                     <div class="sec-head mb-50">
-                                        <h6 class="sub-head">Send a <span class="fw-200">message</span></h6>
+                                        <h6 class="sub-head">Envía un <span class="fw-200">mensaje</span></h6>
                                     </div>
-                                    <form id="contact-form" method="post" action="contact.php">
-
+                                    <form id="contact-form" method="post" action="https://formsubmit.co/jelu@jeluchu.com">
                                         <div class="messages"></div>
-
                                         <div class="controls row">
-
                                             <div class="col-lg-6">
                                                 <div class="form-group mb-30">
-                                                    <input id="form_name" type="text" name="name" placeholder="Name"
-                                                        required="required">
+                                                    <label for="form_name">Nombre <span class="star">*</span></label>
+                                                    <input id="form_name" type="text" name="name"
+                                                        placeholder="¿Cómo te llamas?" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
                                                 <div class="form-group mb-30">
-                                                    <input id="form_email" type="email" name="email" placeholder="Email"
-                                                        required="required">
+                                                    <label for="form_email">Correo electrónico <span
+                                                            class="star">*</span></label>
+                                                    <input id="form_email" type="email" name="email"
+                                                        placeholder="¿Cuál es tu e-mail?" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-12">
                                                 <div class="form-group mb-30">
+                                                    <label for="form_subject">Asunto <span class="star">*</span></label>
                                                     <input id="form_subject" type="text" name="subject"
-                                                        placeholder="Subject">
+                                                        placeholder="¿De que quieres hablar?" required="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="form-group mb-30">
+                                                    <label for="form_budget">Aplicación relacionada <span
+                                                            class="opt sub-color">(Optional)</span></label>
+                                                    <input id="form_budget" type="text" name="budget"
+                                                        placeholder="Indica sobre que aplicación se trata">
                                                 </div>
                                             </div>
 
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <textarea id="form_message" name="message" placeholder="Message"
-                                                        rows="4" required="required"></textarea>
+                                                    <label for="form_message">Mensaje</label>
+                                                    <textarea id="form_message" name="message"
+                                                        placeholder="Dame más detalles del tema a tratar" rows="4"
+                                                        required="required"></textarea>
                                                 </div>
                                                 <div class="mt-30">
                                                     <button type="submit" class="butn butn-md butn-bord butn-rounded">
                                                         <div class="d-flex align-items-center">
-                                                            <span>Let's Talking</span>
+                                                            <span>Enviar</span>
                                                             <span class="icon ml-10">
-                                                                <img src="../common/imgs/icons/arrow-top-right.svg"
+                                                                <img src="assets/common/imgs/icons/send.svg"
                                                                     alt="">
                                                             </span>
                                                         </div>
@@ -357,89 +365,32 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- ==================== End Contact ==================== -->
-
-
             </main>
 
-
-            <!-- ==================== Start Footer ==================== -->
-
             <footer class="footer-sa pb-80">
-                <div class="container section-padding bord-thin-top-light">
-                    <div class="contact-info">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <a href="#" class="logo md-mb50">
-                                    <img src="assets/imgs/Logo-light.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="item">
-                                            <span class="sub-color">location</span>
-                                            <p>152 Thatcher Road St, Mahattan, NY 10463, US</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 d-flex justify-content-end justify-end">
-                                        <div class="item">
-                                            <span class="sub-color">inquiry</span>
-                                            <p>hello@hubfolio.agency</p>
-                                            <p>+0685689696</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 offset-lg-5">
-                                <div class="social-icon">
-                                    <a href="#0">
-                                        <i class="fa-brands fa-x-twitter"></i>
-                                    </a>
-                                    <a href="#0">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                    <a href="#0">
-                                        <i class="fa-brands fa-dribbble"></i>
-                                    </a>
-                                    <a href="#0">
-                                        <i class="fa-brands fa-behance"></i>
-                                    </a>
-                                    <a href="#0">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="sub-footer">
                     <div class="container bord-thin-top-light pt-50">
                         <div class="row">
                             <div class="col-lg-8">
-                                <div class="copy sub-color md-mb30">
-                                    <p>© 2024 <a href="#0">Hubfolio Agency</a>. All Right Reserved</p>
+                                <div class="links sub-color d-flex justify-content-between">
+                                    <p>
+                                        Un mundo lleno de posibilidades
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-lg-4 d-flex justify-content-end">
-                                <div class="links sub-color d-flex justify-content-between">
-                                    <a href="#0" class="active">Home</a>
-                                    <a href="#0">Works</a>
-                                    <a href="#0">Studio</a>
-                                    <a href="#0">News</a>
+                                <div class="copy sub-color md-mb30">
+                                    <p>©
+                                        <script>document.write(new Date().getFullYear())</script> <a
+                                            href="../index.html">Jéluchu</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
-
-            <!-- ==================== End Footer ==================== -->
-
-
         </div>
-
     </div>
 
     <!-- jQuery -->
