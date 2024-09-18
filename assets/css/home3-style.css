@@ -44,6 +44,7 @@
   --bg-color: #212121;
   --theme-color: #151515;
   --main-color: #C9DFB2;
+  --secondary-color: #98AA82;
   --font-bold: 'Visby', 'visby_round_cfbold';
   --font-heavy: 'Visby', 'visby_round_cfheavy';
   --font-medium: 'Visby', 'visby_round_cfmedium';
@@ -632,6 +633,7 @@
   border-radius: 20px;
   background: #fff;
   overflow: hidden;
+  padding: 20px;
 }
 
 .about-ca .team .team-swiper {
@@ -641,7 +643,7 @@
 .about-ca .team .img {
   width: 190px;
   height: 190px;
-  border-radius: 50%;
+  border-radius: 10%;
   overflow: hidden;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5B5B5B), to(#DDDDDD));
   background-image: -webkit-linear-gradient(top, #5B5B5B, #DDDDDD);
@@ -878,7 +880,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-medium);
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
@@ -904,24 +906,28 @@ h1 {
   font-size: 64px;
   line-height: 64px;
   letter-spacing: -3px;
+  font-family: var(--font-heavy);
 }
 
 h2 {
   font-size: 48px;
   line-height: 60px;
   letter-spacing: -3px;
+  font-family: var(--font-heavy);
 }
 
 h3 {
   font-size: 40px;
   line-height: 52px;
   letter-spacing: -2px;
+  font-family: var(--font-heavy);
 }
 
 h4 {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -2px;
+  font-family: var(--font-bold)
 }
 
 h5 {
@@ -934,6 +940,7 @@ h6 {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -.7px;
+  font-family: var(--font-bold)
 }
 
 .sub-color {
@@ -950,6 +957,10 @@ p {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
+}
+
+b {
+  font-family: var(--font-heavy);
 }
 
 .sec-head {
@@ -998,9 +1009,10 @@ p {
 }
 
 .butn.butn-bg {
-  border: 1px solid var(--main-color);
-  background: var(--main-color);
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
   color: #fff;
+  font-family: var(--font-heavy);
 }
 
 .butn.butn-bg:hover {
