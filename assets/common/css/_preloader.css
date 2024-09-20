@@ -1,8 +1,57 @@
+/* --------------- Fonts --------------- */
+
+@font-face {
+  font-family: 'visby_round_cfbold';
+  src: url('../common/fonts/visby-bold-webfont.woff2') format('woff2'),
+    url('../common/fonts/visby-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'visby_round_cfheavy';
+  src: url('../common/fonts/visby-heavy-webfont.woff2') format('woff2'),
+    url('../common/fonts/visby-heavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'visby_round_cflight';
+  src: url('../common/fonts/visby-light-webfont.woff2') format('woff2'),
+    url('../common/fonts/visby-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'visby_round_cfmedium';
+  src: url('../common/fonts/visby-medium-webfont.woff2') format('woff2'),
+    url('../common/fonts/visby-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'visby_round_cfregular';
+  src: url('../common/fonts/visby-regular-webfont.woff2') format('woff2'),
+    url('../common/fonts/visby-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-bold: 'Visby', 'visby_round_cfbold';
+  --font-heavy: 'Visby', 'visby_round_cfheavy';
+  --font-medium: 'Visby', 'visby_round_cfmedium';
+}
+
 /* Preloader
 -----------------------------------------------------------------*/
 body.loaded {
   overflow: hidden !important;
-  height: 100% !important; }
+  height: 100% !important;
+}
 
 .loader-wrap {
   position: fixed;
@@ -22,62 +71,82 @@ body.loaded {
   -ms-flex-pack: center;
   justify-content: center;
   background: transparent;
-  z-index: 99999999999999; }
+  z-index: 99999999999999;
+}
 
 .loader-wrap svg {
   position: absolute;
   top: 0;
   width: 100vw;
   height: 110vh;
-  fill: #fff; }
+  fill: #fff;
+}
 
 .loader-wrap .loader-wrap-heading .load-text {
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 15px;
   text-transform: uppercase;
-  z-index: 20; }
+  z-index: 20;
+  font-family: var(--font-heavy);
+}
 
 .load-text span {
   -webkit-animation: loading 1s infinite alternate;
-  animation: loading 1s infinite alternate; }
+  animation: loading 1s infinite alternate;
+}
 
 .load-text span:nth-child(1) {
   -webkit-animation-delay: 0s;
-  animation-delay: 0s; }
+  animation-delay: 0s;
+}
 
 .load-text span:nth-child(2) {
   -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s; }
+  animation-delay: 0.1s;
+}
 
 .load-text span:nth-child(3) {
   -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s; }
+  animation-delay: 0.2s;
+}
 
 .load-text span:nth-child(4) {
   -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s; }
+  animation-delay: 0.3s;
+}
 
 .load-text span:nth-child(5) {
   -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s; }
+  animation-delay: 0.4s;
+}
 
 .load-text span:nth-child(6) {
   -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s; }
+  animation-delay: 0.5s;
+}
 
 .load-text span:nth-child(7) {
   -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s; }
+  animation-delay: 0.6s;
+}
 
 @-webkit-keyframes loading {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
+
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 
 @keyframes loading {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
+
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
