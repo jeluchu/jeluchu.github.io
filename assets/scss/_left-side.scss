@@ -1,0 +1,81 @@
+/* --------------- Clients --------------- */
+
+.left-side{
+    height: 100vh;
+    width: 350px !important;
+    padding: 20px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+
+    .info{
+        margin-top: 40px;
+
+        .circle-text{
+            width: 220px;
+            height: 220px;
+            background: #212121;
+            padding: 15px;
+            border-radius: 50%;
+            position: relative;
+            margin: auto;
+
+            .icon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 60px;
+            }
+        }
+
+        .cont{
+
+            li{
+                font-size: 18px;
+            }
+
+            span{
+                color: #808080;
+                font-size: 14px;
+            }
+
+            .social-icon{
+
+                a{
+                    font-size: 14px;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    border: 1px solid rgba(255,255,255,.1);
+                    border-radius: 50%;
+                    margin: 0 2px;
+                }
+            }
+        }
+    }
+
+    .butn{
+        text-align: center;
+        width: 100%;
+
+        &.butn-bord{
+            border: 1px solid rgba(255,255,255,.3);
+    
+            &:hover{
+                background: #fff;
+                color: #212121;
+            }
+        }
+
+        > div{
+            margin: auto;
+            width: max-content;
+        }
+    }
+}
+
+.right-side{
+    width: calc(100% - 350px);
+}

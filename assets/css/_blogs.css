@@ -1,0 +1,11 @@
+/* --------------- Blogs --------------- */
+.blog-sa .item .img {
+  height: 470px;
+  border-radius: 15px; }
+
+.blog-sa .item .cont .info a {
+  font-size: 14px; }
+
+.blog-sa .item .cont .info .date {
+  opacity: .5;
+  margin-left: 5px; }
