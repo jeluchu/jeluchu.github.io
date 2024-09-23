@@ -1,475 +1,321 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html lang="zxx">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Proyectos | Jéluchu</title>
-   <meta name="description" content="">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name=" author" content="" />
 
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
-   <link rel="stylesheet" href="assets/css/custom-animation.css">
-   <link rel="stylesheet" href="assets/css/slick.css">
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-   <link rel="stylesheet" href="assets/css/flaticon.css">
-   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-   <link rel="stylesheet" href="assets/css/meanmenu.css">
-   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Title  -->
+    <title>Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/common/css/plugins.css">
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="assets/common/css/common_style.css">
+    <link rel="stylesheet" href="assets/inners/css/inner_pages.css">
 </head>
 
-<body class="dark-bg" onmousedown='return false' onselectstart='return false'>
+<body>
+    <div class="loader-wrap">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
 
-   <button class="scroll-top scroll-to-target" data-target="html">
-      <i class="far fa-angle-double-up"></i>
-   </button>
-
-   <div class="tpoffcanvas-area">
-      <div class="tpoffcanvas">
-         <div class="tpoffcanvas__close-btn">
-            <button class="close-btn">
-               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                  <path
-                     d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-               </svg>
-            </button>
-         </div>
-         <div class="tpoffcanvas__logo text-center">
-            <a href="index.html">
-               <img src="assets/img/logo/logo-white.png" alt="">
-            </a>
-         </div>
-         <div class="mobile-menu"></div>
-         <div class="tpoffcanvas__info text-center">
-            <h4 class="offcanva-title">Impulsando<br>la creatividad</h4>
-            <a href="https://www.google.com/maps/@23.506657,90.3443647,7z" target="_blank">
-               La Elipa, Madrid<br>
-               España
-            </a>
-         </div>
-         <div class="tpoffcanvas__social">
-            <div class="social-icon text-center">
-               <a href="https://www.linkedin.com/in/jesusmariacalderon/" target="_blank"><i
-                     class="fab fa-linkedin-in"></i></a>
-               <a href="https://discord.com/users/411273865642115072" target="_blank"><i class="fab fa-discord"></i></a>
-               <a href="https://twitter.com/jeluchu" target="_blank"><i class="fab fa-twitter"></i></a>
-               <a href="https://www.instagram.com/jeluchu/" target="_blank"><i class="fab fa-instagram"></i></a>
-               <a href="https://t.me/jelusupport/" target="_blank"><i class="fab fa-telegram"></i></a>
+        <div class="loader-wrap-heading">
+            <div class="load-text">
+                <span>J</span>
+                <span>E</span>
+                <span>L</span>
+                <span>U</span>
+                <span>C</span>
+                <span>H</span>
+                <span>U</span>
             </div>
-         </div>
-      </div>
-   </div>
-   <div class="body-overlay"></div>
+        </div>
+    </div>
 
-   <header class="header-bottom__transparent z-index-6 tp-header-height">
+    <div class="cursor"></div>
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
 
-      <div id="header-sticky"
-         class="header-bottom__area header-mob-space header-bottom__area-2 header-bottom__transparent z-index-5">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
-                  <div id="logo" class="header-bottom__logo">
-                     <a href="index.html"><img src="assets/img/logo/logo-black.png" alt=""></a>
-                  </div>
-               </div>
-               <div class="col-xxl-6 col-xl-5 col-lg-5 d-none d-lg-block">
-                  <div class="header-bottom__main-menu">
-                     <nav id="mobile-menu">
-                        <ul>
-                           <li><a href="index.html">Inicio</a></li>
-                           <li><a href="about.html">Sobre mí</a></li>
-                           <li><a href="portfolio.html">Portfolio</a></li>
-                           <li><a href="contact.html">Contacta</a></li>
-                        </ul>
-                     </nav>
-                  </div>
-               </div>
-               <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-8 col-6">
-                  <div class="header-bottom__right d-flex align-items-center justify-content-end">
-                     <div class="header-bottom__btn d-flex align-items-center">
-                        <a class="tp-btn-cosmic tp-btn-hover alt-color-dark-green d-none d-md-inline-block"
-                           href="https://drive.google.com/file/d/1x50DzDhjP4Q5wYewEhUydUZoTQ07mFhT/view?usp=share_link" target=”_blank”>
-                           <span class="white-text">Ver CV</span>
-                           <b></b>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <img src="assets/imgs/logo/logo.png" alt="logo">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre Jeluchu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacta</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="topnav d-flex align-items-center">
+                <a href="inner_pages/contact.html" class="butn butn-rounded">
+                    <div class="d-flex align-items-center">
+                        <span>Ver el CV</span>
+                        <span class="icon ml-10">
+                            <img src="assets/common/imgs/icons/person-accounts.svg" alt="">
+                        </span>
+                    </div>
+                </a>
+                <div class="menu-icon cursor-pointer">
+                    <span class="icon ti-align-right"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hamenu">
+        <div class="close-menu cursor-pointer ti-close"></div>
+        <div class="container-fluid rest d-flex">
+            <div class="menu-links">
+                <ul class="main-menu rest">
+                    <li>
+                        <div class="o-hidden">
+                            <a href="index.html" class="link"><span class="fill-text"data-text="Inicio">Inicio</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o-hidden">
+                            <a href="about.html" class="link"><span class="fill-text"data-text="Sobre Jeluchu">Sobre Jeluchu</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o-hidden">
+                            <a href="projects.html" class="link"><span class="fill-text"data-text="Proyectos">Proyectos</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o-hidden">
+                            <a href="portfolio.html" class="link"><span class="fill-text"data-text="Portfolio">Portfolio</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="o-hidden">
+                            <a href="contact.html" class="link"><span class="fill-text"data-text="Contacta">Contacta</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cont-info valign">
+                <div class="text-center full-width">
+                    <div class="logo">
+                        <img src="assets/imgs/logo-icon.svg" alt="">
+                    </div>
+                    <div class="social-icon mt-40">
+                        <a href="https://x.com/jeluchu" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
                         </a>
-                        <a class="header-bottom__bar d-lg-none tp-menu-bar" href="javascript:void(0)"><i
-                              class="fal fa-bars"></i></a>
-                     </div>
-                  </div>
-               </div>
+                        <a href="https://www.instagram.com/jeluchu/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://t.me/jchsupport" target="_blank">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jesusmariacalderon/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://discordapp.com/users/411273865642115072" target="_blank">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                    </div>
+                    <div class="item mt-30">
+                        <h5>La Elipa,<br>Madrid, España</h5>
+                    </div>
+                    <div class="item mt-10">
+                        <h5><a href="mailto:jelu@jeluchu.com">jelu@jeluchu.com</a></h5>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
+        </div>
+    </div>
 
-   </header>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main>
+                <header class="work-hed">
+                    <div class="container section-padding">
+                        <div class="caption text-center">
+                            <h1>Portfolio</h1>
+                            <div class="path mt-15">
+                                <span>
+                                    <a href="#">Inicio</a>
+                                </span>
+                                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                                <span class="main-color">Trayectoria laboral</span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
 
-         <main>
-
-            <div class="breadcrumb__area breadcrumb-height-2 breadcrumb-overlay p-relative fix">
-               <div class="breadcrumb__shape-3 z-index-4">
-                  <img src="assets/img/portfolio/breadcrumb-sub-2.png" alt="">
-               </div>
-               <div class="container">
-                  <div class="row justify-content-center">
-                     <div class="col-xl-10">
-                        <div class="breadcrumb__content z-index-3 text-center">
-                           <h3 class="breadcrumb__title tp-char-animation text-black">Proyectos</h3>
-                           <div class="breadcrumb__text wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".6s">
-                              <p>
-                                 Descubre y conoce todas las aplicaciones y trabajos<br>
-                                 desarrollados por mi a lo largo del tiempo
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-            <div class="portfolio-area pt-100 pb-90">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-xl-12">
-                        <div class="portfolio-filter masonary-menu text-center mb-35">
-                           <button data-filter="*" class="active"><span>Todos</span></button>
-                           <button data-filter=".cat1"><span>Aplicaciones</span></button>
-                           <button data-filter=".cat2"><span>Audiovisuales</span></button>
-                           <button data-filter=".cat3"><span>Community Manager</span></button>
-                           <button data-filter=".cat4"><span>Webs</span></button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row grid">
-                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1">
-                        <div class="inner-project-item mb-30">
-                           <div class="inner-project-img p-relative">
-                              <img class="w-100" src="assets/img/portfolio/project-inner-1.jpg" alt="">
-                              <div class="inner-project-brand">
-                                 <img src="assets/img/portfolio/project-inner-brand-1.png" alt="">
-                              </div>
-                           </div>
-                           <div class="inner-project-content">
-                              <span class="inner-project-category-title">App · Android e iOS</span>
-                              <h4 class="inner-project-title"><a href="portfolio/hyrlink.html">Hyrlink</a></h4>
-                              <p>
-                                 Guía y progreso no oficial sobre 
-                                 el juego Tears of The Kingdom
-                                 con el máximo parecido al propio juego
-                                 de Nintendo
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1">
-                        <div class="inner-project-item mb-30">
-                           <div class="inner-project-img p-relative">
-                              <img class="w-100" src="assets/img/portfolio/project-inner-1.jpg" alt="">
-                              <div class="inner-project-brand">
-                                 <img src="assets/img/portfolio/project-inner-brand-1.png" alt="">
-                              </div>
-                           </div>
-                           <div class="inner-project-content">
-                              <span class="inner-project-category-title">App · Android e iOS</span>
-                              <h4 class="inner-project-title"><a href="portfolio/inook.html">iNook</a></h4>
-                              <p>
-                                 Guía y progreso no oficial sobre 
-                                 el juego Animal Crossing con el
-                                 máximo parecido al propio juego
-                                 de Nintendo
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1 cat4 ">
-                        <div class="inner-project-item  mb-30">
-                           <div class="inner-project-img p-relative">
-                              <img src="assets/img/portfolio/project-inner-2.jpg" alt="">
-                              <div class="inner-project-brand">
-                                 <img class="w-100" src="assets/img/portfolio/project-inner-brand-2.png" alt="">
-                              </div>
-                           </div>
-                           <div class="inner-project-content">
-                              <span class="inner-project-category-title">App (Android e iOS) · Web</span>
-                              <h4 class="inner-project-title"><a href="project-details.html">La Arroba</a></h4>
-                              <p>
-                                 Promocionar y fomentar el consumo
-                                 en los pequeños comercios del barrio
-                                 mediante una plataforma de puntos
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1 cat2">
-                        <div class="inner-project-item mb-30">
-                           <div class="inner-project-img p-relative">
-                              <img class="w-100" src="assets/img/portfolio/project-inner-3.jpg" alt="">
-                              <div class="inner-project-brand">
-                                 <img src="assets/img/portfolio/project-inner-brand-3.png" alt="">
-                              </div>
-                           </div>
-                           <div class="inner-project-content">
-                              <span class="inner-project-category-title">Android App · Podcast</span>
-                              <h4 class="inner-project-title"><a href="project-details.html">A la vuelta de la esquina</a></h4>
-                              <p>
-                                 Programa de radio lleno de buena música
-                                 y mucho humor
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1">
-                        <div class="inner-project-item mb-30">
-                           <div class="inner-project-img p-relative">
-                              <img class="w-100" src="assets/img/portfolio/project-inner-5.jpg" alt="">
-                              <div class="inner-project-brand">
-                                 <img src="assets/img/portfolio/project-inner-brand-5.png" alt="">
-                              </div>
-                           </div>
-                           <div class="inner-project-content">
-                              <span class="inner-project-category-title">Android App</span>
-                              <h4 class="inner-project-title"><a href="portfolio/aruppi.html">Aruppi</a></h4>
-                              <p>
-                                 Viaje hacia el país nipón para contar
-                                 su cultura, secretos y acercar el anime/manga a
-                                 todas las personas
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat3">
-                        <div class="portfolio__single">
-                           <div class="portfolio__img">
-                              <div class="inner-project-item mb-30">
-                                 <div class="inner-project-img p-relative">
-                                    <img class="w-100" src="assets/img/portfolio/project-inner-4.jpg" alt="">
-                                    <div class="inner-project-brand">
-                                       <img src="assets/img/portfolio/project-inner-brand-4.png" alt="">
+                <div class="works-mp section-padding pt-0">
+                    <div class="container">
+                        <div class="row md-marg gallery">
+                            <div class="col-lg-4 items">
+                                <div class="item">
+                                    <div class="cont d-flex align-items-center">
+                                        <div>
+                                            <h5>Babel</h5>
+                                            <span>Desarrollo de apps móviles<br>para iOS y Android</span>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <a href="portfolio/babel.html">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                 </div>
-                                 <div class="inner-project-content">
-                                    <span class="inner-project-category-title">Gestión de redes sociales</span>
-                                    <h4 class="inner-project-title"><a href="project-details.html">Óptica Lledó</a></h4>
-                                    <p>
-                                       Tu óptica de confianza ofreciéndote
-                                       descuentos y curiosidades para tu salud
-                                       ocular y auditiva
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item  cat4 cat2 cat1">
-                        <div class="inner-project-item mb-30">
-                           <div class="inner-project-img p-relative">
-                              <img class="w-100" src="assets/img/portfolio/project-inner-7.jpg" alt="">
-                              <div class="inner-project-brand">
-                                 <img src="assets/img/portfolio/project-inner-brand-5.png" alt="">
-                              </div>
-                           </div>
-                           <div class="inner-project-content">
-                              <span class="inner-project-category-title">Medio independiente de comunicación</span>
-                              <h4 class="inner-project-title"><a href="project-details.html">La Elipa Activa</a></h4>
-                              <p>
-                                 Acercando la información, noticias
-                                 e historia del barrio a todos los vecinos
-                                 desde diversos medios
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat3 cat4">
-                        <div class="inner-project-item mb-30">
-                           <div class="inner-project-img p-relative">
-                              <img src="assets/img/portfolio/project-inner-6.jpg" alt="">
-                              <div class="inner-project-brand">
-                                 <img src="assets/img/portfolio/project-inner-brand-6.png" alt="">
-                              </div>
-                           </div>
-                           <div class="inner-project-content">
-                              <span class="inner-project-category-title">Web · Redes sociales</span>
-                              <h4 class="inner-project-title"><a href="project-details.html">Eventos Infima</a></h4>
-                              <p>
-                                 Eventos con alma, que se promocionan
-                                 desde la web o las redes sociales, 
-                                 para darlos a conocer
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1">
-                        <div class="portfolio__single">
-                           <div class="portfolio__img">
-                              <div class="inner-project-item mb-30">
-                                 <div class="inner-project-img p-relative">
-                                    <img class="w-100" src="assets/img/portfolio/project-inner-8.jpg" alt="">
-                                    <div class="inner-project-brand">
-                                       <img src="assets/img/portfolio/project-inner-brand-4.png" alt="">
+                                    <div class="img">
+                                        <img src="assets/imgs/portfolio/babel/babel-porfolio.png" alt="">
                                     </div>
-                                 </div>
-                                 <div class="inner-project-content">
-                                    <span class="inner-project-category-title">Trabajo · Consultora</span>
-                                    <h4 class="inner-project-title"><a href="project-details.html">Plexus</a></h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 items">
+                                <div class="item">
+                                    <div class="cont d-flex align-items-center">
+                                        <div>
+                                            <h5>LH Magazin</h5>
+                                            <span>Desarrollo web, técnico<br>y locutor de sonido</span>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <a href="portfolio/lhmagazin.html">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img">
+                                        <img src="assets/imgs/portfolio/lhmagazin/lhmagazin-portfolio.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 items">
+                                <div class="item">
+                                    <div class="cont d-flex align-items-center">
+                                        <div>
+                                            <h5>Plexus</h5>
+                                            <span>Desarrollo de apps móviles<br>para Android</span>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <a href="portfolio/plexus.html">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img">
+                                        <img src="assets/imgs/portfolio/plexus/plexus-portfolio.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 items">
+                                <div class="item">
+                                    <div class="cont d-flex align-items-center">
+                                        <div>
+                                            <h5>Unisys</h5>
+                                            <span>Desarrollo de apps móviles<br>para iOS y Android</span>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <a href="portfolio/unisys.html">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img">
+                                        <img src="assets/imgs/portfolio/unisys/unisys-portfolio.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer-sa pb-80">
+                <div class="container section-padding bord-thin-top-light">
+                    <div class="call-action text-center mb-80">
+                        <h2 class="">
+                            <a href="#0">Impulsando<br> la creatividad</a>
+                            <div class="buton d-flex align-items-center justify-content-center">
+                                <a href="#0">
+                                    <span class="mb-10">Contacta</span> <br> <span>conmigo</span>
+                                </a>
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+                <div class="sub-footer">
+                    <div class="container bord-thin-top-light pt-50">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="links sub-color d-flex justify-content-between">
                                     <p>
-                                       Desarrollo de aplicaciones móviles
-                                       en diversos proyectos del entorno
-                                       de movilidad y soporte
+                                        Un mundo lleno de posibilidades
                                     </p>
-                                 </div>
-                              </div>
-                           </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-end">
+                                <div class="copy sub-color md-mb30">
+                                    <p>©
+                                        <script>document.write(new Date().getFullYear())</script> <a
+                                            href="../index.html">Jéluchu</a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1">
-                        <div class="inner-project-item mb-30">
-                           <div class="inner-project-img p-relative">
-                              <img src="assets/img/portfolio/project-inner-9.jpg" alt="">
-                              <div class="inner-project-brand">
-                                 <img src="assets/img/portfolio/project-inner-brand-6.png" alt="">
-                              </div>
-                           </div>
-                           <div class="inner-project-content">
-                              <span class="inner-project-category-title">Trabajo · Consultora</span>
-                              <h4 class="inner-project-title"><a href="project-details.html">Babel</a></h4>
-                              <p>
-                                 Desarrollo de aplicaciones móviles
-                                 en diversos proyectos del entorno
-                                 de movilidad y soporte
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item cat1">
-                        <div class="inner-project-item mb-30">
-                           <div class="inner-project-img p-relative">
-                              <img src="assets/img/portfolio/project-inner-9.jpg" alt="">
-                              <div class="inner-project-brand">
-                                 <img src="assets/img/portfolio/project-inner-brand-6.png" alt="">
-                              </div>
-                           </div>
-                           <div class="inner-project-content">
-                              <span class="inner-project-category-title">Trabajo · Consultora</span>
-                              <h4 class="inner-project-title"><a href="project-details.html">Unisys</a></h4>
-                              <p>
-                                 Desarrollo de aplicaciones móviles
-                                 en diversos proyectos del entorno
-                                 de movilidad y soporte
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
 
-         </main>
+    <!-- jQuery -->
+    <script src="assets/common/js/lib/jquery-3.6.0.min.js"></script>
+    <script src="assets/common/js/lib/jquery-migrate-3.4.0.min.js"></script>
 
-         <footer class="pb-50">
-            <div class="tp-footer__pl-pr p-relative">
-               <div class="footer-black-bg tp-gsap-bg"></div>
-               <div class="tp-footer__area pt-50">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-7 pb-30 wow tpfadeUp" data-wow-duration=".9s"
-                           data-wow-delay=".5s">
-                           <div class="tp-footer__widget footer-col-1">
-                              <a href="index.html" class="tp-footer__widget-logo mb-10">
-                                 <img src="assets/img/logo/logo-black.png" alt="">
-                              </a>
-                              <div class="tp-footer__text">
-                                 <p>
-                                    Somos bombillas andantes que no deberían
-                                    ir por la vida apagadas, es por eso que
-                                    hay que impulsar las ideas creativas
-                                 </p>
-                              </div>
-                              <div class="tp-copyright__text">
-                                 <span>©
-                                    <script>document.write(new Date().getFullYear())</script> <a href="#">Jéluchu</a>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-5 pb-30 wow tpfadeUp" data-wow-duration=".9s"
-                           data-wow-delay=".7s">
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-6 pb-30 wow tpfadeUp" data-wow-duration=".9s"
-                           data-wow-delay=".9s">
-                           <div class="tp-footer__widget footer-col-2">
-                              <h4 class="tp-footer__widget-title">Navegación</h4>
-                              <div class="tp-footer__content">
-                                 <ul>
-                                    <li><a href="index.html">Inicio</a></li>
-                                    <li><a href="about.html">Sobre mí</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="https://drive.google.com/file/d/1x50DzDhjP4Q5wYewEhUydUZoTQ07mFhT/view?usp=share_link" target=”_blank”>Visualiza CV</a></li>
-                                    <li><a href="contact.html">Contacta</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 pb-30 wow tpfadeUp" data-wow-duration=".9s"
-                           data-wow-delay="1s">
-                           <div class="tp-footer__widget footer-col-3">
-                              <h4 class="tp-footer__widget-title">Links de interés</h4>
-                              <div class="tp-footer__content">
-                                 <ul>
-                                    <li><a href="#">Aruppi</a></li>
-                                    <li><a href="#">A la vuelta de la esquina</a></li>
-                                    <li><a href="#">iNook</a></li>
-                                    <li><a href="#">La Arroba</a></li>
-                                    <li><a href="#">La Elipa</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </footer>
+    <!-- plugins -->
+    <script src="assets/common/js/lib/plugins.js"></script>
 
+    <!-- GSAP -->
+    <script src="assets/common/js/gsap_lib/gsap.min.js"></script>
+    <script src="assets/common/js/gsap_lib/ScrollSmoother.min.js"></script>
+    <script src="assets/common/js/gsap_lib/ScrollTrigger.min.js"></script>
+    <script src="assets/common/js/gsap_lib/SplitText.min.js"></script>
+    <script src="assets/common/js/gsap_lib/matter.js"></script>
+    <script src="assets/common/js/gsap_lib/throwable.js"></script>
 
-   <!-- JS here -->
-   <script src="assets/js/jquery.js"></script>
-   <script src="assets/js/waypoints.js"></script>
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
-   <script src="assets/js/gsap.min.js"></script>
-   <script src="assets/js/ScrollTrigger.min.js"></script>
-   <script src="assets/js/ScrollSmoother.min.js"></script>
-   <script src="assets/js/parallax-scroll.js"></script>
-   <script src="assets/js/split-text.min.js"></script>
-   <script src="assets/js/slick.min.js"></script>
-   <script src="assets/js/magnific-popup.js"></script>
-   <script src="assets/js/counterup.js"></script>
-   <script src="assets/js/wow.js"></script>
-   <script src="assets/js/nice-select.js"></script>
-   <script src="assets/js/swiper-bundle.js"></script>
-   <script src="assets/js/meanmenu.js"></script>
-   <script src="assets/js/tilt.jquery.js"></script>
-   <script src="assets/js/imagesloaded-pkgd.js"></script>
-   <script src="assets/js/ajax-form.js"></script>
-   <script src="assets/js/isotope-pkgd.js"></script>
-   <script src="assets/js/main.js"></script>
+    <!-- common scripts -->
+    <script src="assets/common/js/common_scripts.js"></script>
 
-   <script>
-      var encabezado = document.getElementById('logo');
-      var encabezadoImg = document.querySelector('#logo a img');
-
-      window.addEventListener('scroll', function () {
-         if (window.pageYOffset >= encabezado.offsetTop) {
-            encabezadoImg.src = "assets/img/logo/logo-green.png";
-         } else {
-            encabezadoImg.src = "assets/img/logo/logo-black.png";
-         }
-      });
-   </script>
+    <!-- custom scripts -->
+    <script src="assets/js/inner_pages.js"></script>
 </body>
-
 </html>

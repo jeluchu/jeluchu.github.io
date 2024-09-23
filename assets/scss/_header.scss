@@ -1,0 +1,206 @@
+/* --------------- header --------------- */
+
+.header-ca{
+
+    .main-box{
+        color: #fff;
+        height: 870px;
+        padding: 40px;
+        background-image: linear-gradient(to bottom, #625C5C, #C6C6C6);
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            right: -20%;
+            width: 100%;
+            height: 100%;
+            background-image: url(../imgs/header/bg.png);
+            background-size: cover;
+            background-position: left top;
+        }
+    }
+
+    .caption{
+
+        h1{
+            font-size: 128px;
+            line-height: 128px;
+            font-weight: 600;
+        }
+    }
+
+    .text{
+        position: relative;
+        z-index: 3;
+        margin-top: 60px;
+
+        h6{
+            font-size: 20px;
+        }
+    }
+
+    .gl-rate{
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        width: max-content;
+        background: rgba(0,0,0,.08);
+        backdrop-filter: blur(10px);
+        border-radius: 60px;
+        padding: 10px 20px;
+        z-index: 3;
+
+        .icon{
+            width: 35px;
+        }
+
+        .cont{
+            padding-left: 30px;
+
+            h6{
+                line-height: 1;
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            .stars{
+                font-size: 13px;
+                color: #FFA826;
+                margin-left: 10px;
+            }
+
+            p{
+                color: #eee;
+                font-size: 12px;
+                margin-top: 2px;
+            }
+        }
+    }
+
+    .right-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .serv{
+        background: #fff;
+        border-radius: 20px;
+        padding: 20px;
+        overflow: hidden;
+
+        .content{
+            position: relative;
+            height: 300px;
+
+            .item{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: max-content;
+                display: inline-block;
+                user-select: none;
+                pointer-events: auto;
+                transition: none;
+
+                span{
+                    font-size: 16px;
+                    padding: 8px 24px;
+                    background: #EFF0FA;
+                    border-radius: 30px;
+
+                    &.bdark{
+                        background: #151515;
+                        color: #fff;
+                    }
+
+                    &.bred{
+                        background: $main-color;
+                        color: #fff;
+                    }
+                }
+
+                img{
+                    width: 50px;
+                }
+
+                .icon1{
+
+                    img{
+                        width: 70px;
+                    }
+                }
+            }
+        }
+    }
+
+    .awards{
+        background: $main-color;
+        color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 100%;
+        padding: 0 30px 30px 30px;
+        position: relative;
+
+        .awards-swiper{
+            height: 100%;
+
+            .swiper-slide{
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .item{
+            width: 100%;
+            
+            .img{
+                width: 140px;
+                margin: auto;
+            }
+
+            span{
+                font-size: 14px;
+                line-height: 1.4;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        .controls{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+
+            .swiper-button-next, .swiper-button-prev{
+                position: static;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-size: 12px;
+                color: #fff;
+                border: 1px solid #eee;
+                border-radius: 50%;
+                margin: 0 2px;
+
+                &:hover{
+                    background: #fff;
+                    color: $main-color;
+                }
+
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

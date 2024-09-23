@@ -1,0 +1,43 @@
+/* --------------- Awards --------------- */
+.awards-sa .item-title {
+  padding: 0 15px 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  .awards-sa .item-title > div {
+    padding: 0; }
+  .awards-sa .item-title h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: .7; }
+
+.awards-sa .item-line {
+  padding: 25px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  z-index: 3; }
+  .awards-sa .item-line > div {
+    padding: 0; }
+    .awards-sa .item-line > div:last-of-type {
+      text-align: right; }
+  .awards-sa .item-line:hover:after {
+    height: 100%; }
+  .awards-sa .item-line:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    z-index: -1; }
+  .awards-sa .item-line .honors h6 {
+    font-size: 14px; }
+  .awards-sa .item-line .project-date span {
+    font-size: 14px;
+    opacity: .7; }
