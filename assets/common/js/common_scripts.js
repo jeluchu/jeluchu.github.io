@@ -1,15 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Hubfolio
-    Theme URI: http://
-    Description: Creative Agency & Portfolio
-    Author: Uithemez
-    Author URI: http://themeforest.net/user/Uithemez
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
-
-
 $(function () {
 
     "use strict";
