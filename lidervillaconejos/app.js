@@ -11,7 +11,7 @@ const profiles = {
         role: "Jefe de Ventas",
         email: "mailto:martin@satfrutasmargui.com",
         phone: "tel:+34618759614",
-        linkedin: "https://es.linkedin.com/in/mart%C3%ADn-p%C3%A9rez-mesas-a88a26178"
+        linkedin: "https://www.linkedin.com/in/mart%C3%ADn-p%C3%A9rez-mesas-a88a26178/"
     }
 };
 
